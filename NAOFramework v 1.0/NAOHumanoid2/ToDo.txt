@@ -1,0 +1,2 @@
+- GUI needs a log screen
+- When GUI is connecting to the robots indicate a busy signal

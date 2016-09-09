@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Story>
+	<NodesConfig>
+		<Node>
+			<Name>Start</Name>
+			<Text>This is the starting Story Node.</Text>
+		</Node>
+		<Node>
+			<Name>Take the left zero Story Node</Name>
+			<Text>This is the left zero Story Node.</Text>
+		</Node>
+		<Node>
+			<Name>Take the right zero Story Node</Name>
+			<Text>This is the Right zero Story Node.</Text>
+		</Node>
+		<Node>
+			<Name>Take the left first Story Node</Name>
+			<Text>This is the left one Story Node. A final node.</Text>
+		</Node>
+		<Node>
+			<Name>Take the left second Story Node</Name>
+			<Text>This is the left second Story Node. A final node.</Text>
+		</Node>
+		<Node>
+			<Name>Take the right first Story Node</Name>
+			<Text>This is the right one Story Node. A final node.</Text>
+		</Node>
+		<Node>
+			<Name>Take the right second Story Node</Name>
+			<Text>This is the right second Story Node. A final node.</Text>
+		</Node>
+	</NodesConfig>
+	<LinkingPhase>
+		<Node>
+			<Linker>Start</Linker>
+			<LinkedNode>Take the left zero Story Node</LinkedNode>
+			<LinkedNode>Take the right zero Story Node</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Take the left zero Story Node</Linker>
+			<LinkedNode>Take the left first Story Node</LinkedNode>
+			<LinkedNode>Take the left second Story Node</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Take the right zero Story Node</Linker>
+			<LinkedNode>Take the right first Story Node</LinkedNode>
+			<LinkedNode>Take the right second Story Node</LinkedNode>
+		</Node>
+	</LinkingPhase>
+</Story>

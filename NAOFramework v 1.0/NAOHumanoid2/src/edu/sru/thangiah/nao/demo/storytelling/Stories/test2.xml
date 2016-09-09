@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Story>
+	<NodesConfig>
+		<Node>
+			<Name>Start</Name>
+			<Text>This is the starting Story Node.</Text>
+			<Option>Test Option 1</Option>
+			<Option>Test Option 2</Option>
+			<Option>Test Option 3</Option>
+		</Node>
+		<Node>
+			<Name>Node1</Name>
+			<Text>This is the left zero Story Node.</Text>
+			<Option>Test Option 4</Option>
+			<Option>Test Option 5</Option>
+		</Node>
+		<Node>
+			<Name>Node2</Name>
+			<Text>This is the Right zero Story Node.</Text>
+			<Option>Test Option 6</Option>
+		</Node>
+		<Node>
+			<Name>Node3</Name>
+			<Text>This is the left one Story Node. A final node.</Text>
+		</Node>
+		<Node>
+			<Name>Node4</Name>
+			<Text>This is the left second Story Node. A final node.</Text>
+		</Node>
+		<Node>
+			<Name>Node5</Name>
+			<Text>This is the right one Story Node. A final node.</Text>
+		</Node>
+		<Node>
+			<Name>Node6</Name>
+			<Text>This is the right second Story Node. A final node.</Text>
+		</Node>
+	</NodesConfig>
+	<LinkingPhase>
+		<Node>
+			<Linker>Start</Linker>
+			<LinkedNode>Node1</LinkedNode>
+			<LinkedNode>Node2</LinkedNode>
+			<LinkedNode>Node3</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node1</Linker>
+			<LinkedNode>Node4</LinkedNode>
+			<LinkedNode>Node5</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node2</Linker>
+			<LinkedNode>Node6</LinkedNode>
+		</Node>
+	</LinkingPhase>
+</Story>

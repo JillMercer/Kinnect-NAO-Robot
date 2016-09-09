@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Story>
+	<NodesConfig>
+		<Node>
+			<Name>Start</Name>
+			<Text>You and your friends are hanging out on the playground. You guys are bored so you brain storm ideas for something to do. The group decides on tag. While playing Bobby gets too excited and accidentally tags you too hard. You fall and scrape your hands.  Do you get mad at Bobby...?</Text>
+			<Option>Yes, you got hurt and you are angry!</Option>
+			<Option>No, you were just playing and accidents happen.</Option>
+		</Node>
+		<Node>
+			<Name>C</Name>
+			<Text>Bobby always acts like this when you play with him and you’re sick of it. You get angry and storm away.  You sit on the slide and sulk over your injuries.  Bobby comes over to apologize.  You accept his apology.  Feeling bad, he invites you to his birthday party next weekend. Do you go...? </Text>
+			<Option>Yes, definitely!</Option>
+			<Option>No, you'd rather not.</Option>
+		</Node>
+		<Node>
+			<Name>D</Name>
+			<Text>You know he didn't mean to hurt you.  You guys finish playing the game of tag.  When its time to go in from recess another kid from the group, Dylan, pulls you aside.  He's holding a frog.  Do you suggest...</Text>
+			<Option>Putting it back in the grass where it belongs.</Option>
+			<Option>Hiding it in the teachers desk.</Option>
+		</Node>
+		<Node>
+			<Name>E</Name>
+			<Text>You want to go, but you need to bring him a present.  How much of your allowance do you want to spend?  You earn five bucks a week.  Do you spend...</Text>
+			<Option>Five dollars.</Option>
+			<Option>Twenty dollars.</Option>
+		</Node>
+		<Node>
+			<Name>F</Name>
+			<Text>You buy him a jar of slime, a whoopee cushion and a balloon.   Bobby is excited about the slime and the whoopee cushion.  He thinks they’re the coolest presents of all.  After the party you two let all the balloons fly off into the sky.  The cake from the party is good, but not nearly as good as all the laughs you get from the whoopee cushion later.</Text>
+		</Node>
+		<Node>
+			<Name>G</Name>
+			<Text>For his birthday you give him the newest star wars action figure.  He loves it, it goes well with his others.  He invites you to play with his toys and the two of you have a great time.  You come back the next weekend to act out space operas, and then the weekend after that and after that.  Later, bobby becomes your best friend.  You’re grateful you forgave him all those years ago.</Text>
+		</Node>
+		<Node>
+			<Name>H</Name>
+			<Text>You tell him you’re busy that weekend.   You end up going to your grandma’s house that weekend anyway.  Her house is huge and old, surrounded by a forest.  To waste time you... </Text>
+			<Option>Explore the house.</Option>
+			<Option>Explore the wilderness in the back yard.</Option>
+		</Node>
+		<Node>
+			<Name>I</Name>
+			<Text>You start with the basement, digging through boxes and drawers.  You find a pocket knife with a bone  handle.  You ask your grandma about it. She says it was her father’s and that you look so much like him, its only right for you to have it. You loose it a week later and never tell her.</Text>
+		</Node>
+		<Node>
+		<Name>J</Name>
+			<Text>You wander around, picking up stones as you go. You find an arrow head and pocket that too, later using it to carve your name into a tree.  You find a stream and skip all those just collected rocks across the surface.  You keep one rock though, a bright blue one with gold flecks. Later, you show it to your mom and she is so impressed with it she takes it to a jeweler.  You end up selling the rock for a lot of money.  Most of it goes into your college account, but you get to spend some of it on video games and candy, which you think is pretty cool. </Text>
+		</Node>
+		<Node>
+		<Name>K</Name>
+			<Text>You convince Dylan to let you have the frog, and you put it back where its safe.  You're late to get back and the teacher yells at you.  After school gets out, you and Dylan walk home together.  He wants to take a short cut through an alley. Do you go with him...?</Text>
+			<Option>Sure, why wouldn't you.</Option>
+			<Option>No, that sounds dangerous.</Option>
+		</Node>
+		<Node>
+		<Name>L</Name>
+			<Text>In the alley you meet a homeless man who asks you for money.  You don't have any, but you have some of your lunch left over so you give him that instead.  He is very grateful.  He tells you stories about the war, about how he got all his scars.  You stay and listen until Dylan's mom calls his cell phone, ordering him to come home.  You never see the homeless man again but you always remember his stories.</Text>
+		</Node>
+		<Node>
+		<Name>M</Name>
+			<Text>You decide to take the long way and Dylan is disappointed, but he tags along.  The long way stops by a comic store, and you two wander in.  You're so glad you took the long way! Your favourite comic book artist is here, signing autographs.  You get a new comic and he signs it, and it becomes a treasure for years to come.</Text>
+		</Node>
+		<Node>
+		<Name>O</Name>
+			<Text>You two sneak the frog into the teachers desk right after recess.  When she opens up her desk she screams.  You and Dylan try unsuccessfully not to giggle.  She knows you two are responsible.  She sends you to the office.  The principle asked who’s idea it was to stash the frog in the desk.  Should you...</Text>
+			<Option>Blame Dylan, it was definitely his fault!</Option>
+			<Option>Do the noble thing, and take the blame.</Option>
+		</Node>
+		<Node>
+		<Name>P</Name>
+			<Text>You tell the principle that it was all Dylan's idea.  Your parents are called in for a conference.  Your mom is furious but you can tell your dad thinks your antics are funny.  He likes to buy you little frog toys now and sneak them into your things when you aren't looking.  Dad's are so weird.</Text>
+		</Node>
+		<Node>
+		<Name>Q</Name>
+			<Text>You take the blame and you get into a lot of trouble.  Your parents ground you for two weeks.  You and Dylan become best friends after that.  Your parents don't like him, because he's almost always doing something reckless.  You like him because of it.</Text>
+		</Node>
+	</NodesConfig>
+	<LinkingPhase>
+		<Node>
+			<Linker>Start</Linker>
+			<LinkedNode>C</LinkedNode>
+			<LinkedNode>D</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>C</Linker>
+			<LinkedNode>E</LinkedNode>
+			<LinkedNode>H</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>D</Linker>
+			<LinkedNode>K</LinkedNode>
+			<LinkedNode>O</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>E</Linker>
+			<LinkedNode>F</LinkedNode>
+			<LinkedNode>G</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>H</Linker>
+			<LinkedNode>I</LinkedNode>
+			<LinkedNode>J</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>K</Linker>
+			<LinkedNode>L</LinkedNode>
+			<LinkedNode>M</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>O</Linker>
+			<LinkedNode>P</LinkedNode>
+			<LinkedNode>Q</LinkedNode>
+		</Node>
+	</LinkingPhase>
+</Story>

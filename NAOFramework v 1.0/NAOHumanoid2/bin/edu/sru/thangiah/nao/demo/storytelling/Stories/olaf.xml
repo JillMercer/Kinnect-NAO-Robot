@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Story>
+	<NodesConfig>
+		<Node>
+			<Name>Start</Name>
+			<Text>My name is Olaf. I am a snowman, I've always dreamed about summer!</Text>
+		</Node>
+		<Node>
+			<Name>Node1</Name>
+			<Text>The blue skies and white clouds! Buzzing bees and dandelions! A day in the sun would be so amazing!</Text>
+		</Node>
+		<Node>
+			<Name>Node2</Name>
+			<Text>At the beach, I could really work on my snowman tan!</Text>
+		</Node>
+		<Node>
+			<Name>Node3</Name>
+			<Text>Or go sailing! Ahhhh, what a lovely breeze!</Text>
+		</Node>
+		<Node>
+			<Name>Node4</Name>
+			<Text>There's nothing more relaxing than a nice swim! All my cares would just melt away...</Text>
+		</Node>
+		<Node>
+			<Name>Node5</Name>
+			<Text>Summertime is also perferct for meeting new friends!</Text>
+		</Node>
+		<Node>
+			<Name>Node6</Name>
+			<Text>Winter is fine for penguins and ice...</Text>
+		</Node>
+		<Node>
+			<Name>Node6</Name>
+			<Text>...but a tap-dancing seagull is twice as nice!</Text>
+		</Node>
+		<Node>
+			<Name>Node6</Name>
+			<Text>Summer is so full of surprises I can't wait for my dream to come true.</Text>
+		</Node><Node>
+			<Name>Node7</Name>
+			<Text>Then I can play with someone like you!</Text>
+		</Node>
+	</NodesConfig>
+	<LinkingPhase>
+		<Node>
+			<Linker>Start</Linker>
+			<LinkedNode>Node1</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node1</Linker>
+			<LinkedNode>Node2</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node2</Linker>
+			<LinkedNode>Node3</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node3</Linker>
+			<LinkedNode>Node4</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node4</Linker>
+			<LinkedNode>Node5</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node6</Linker>
+			<LinkedNode>Node7</LinkedNode>
+		</Node>
+	</LinkingPhase>
+</Story>
