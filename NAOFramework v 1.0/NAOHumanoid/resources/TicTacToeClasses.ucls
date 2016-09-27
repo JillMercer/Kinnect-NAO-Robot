@@ -1,0 +1,2219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="edu.sru.brian.tictactoegame.decisiontree.LinkPanel" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/LinkPanel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3532" y="655"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="edu.sru.brian.tictactoegame.PlayerAIOld" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/PlayerAIOld.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2293" y="1168"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="edu.sru.brian.tictactoegame.BoardModelGetInterface" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/BoardModelGetInterface.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="987" y="-245"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="edu.sru.brian.tictactoegame.XOButton" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/XOButton.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3231" y="1397"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="edu.sru.brian.tictactoegame.vision.StreamManagerFrame" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/StreamManagerFrame.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="321" y="-236"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="edu.sru.brian.tictactoegame.vision.TTTGCameraPanel" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/TTTGCameraPanel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="515" y="-245"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="7" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TreeNodeMarkerV2.TOOLSTATE" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TreeNodeMarkerV2.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2925" y="646"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="8" language="java" name="edu.sru.brian.tictactoegame.decisiontree.NodeStatus" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/NodeStatus.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1197" y="3311"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="9" language="java" name="edu.sru.brian.tictactoegame.vision.FileImageStream" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/FileImageStream.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2712" y="619"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TreeWriter" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TreeWriter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1435" y="2172"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="11" language="java" name="edu.sru.brian.tictactoegame.vision.InterfaceImageSource" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/InterfaceImageSource.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="720" y="592"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="12" language="java" name="edu.sru.brian.tictactoegame.vision.HoughLineStream" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/HoughLineStream.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2160" y="664"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="edu.sru.brian.tictactoegame.TurnAdaptor" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/TurnAdaptor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2902" y="1925"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="edu.sru.brian.tictactoegame.decisiontree.LinkLayeredPane" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/LinkLayeredPane.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4207" y="628"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="15" language="java" name="edu.sru.brian.tictactoegame.vision.ImageProcessorInterface" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/ImageProcessorInterface.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="744" y="-254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="16" language="java" name="edu.sru.brian.tictactoegame.vision.TTTGCamera" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/TTTGCamera.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2532" y="1393"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="edu.sru.brian.tictactoegame.vision.TTTGCameraFrame" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/TTTGCameraFrame.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2162" y="222"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="18" language="java" name="edu.sru.brian.tictactoegame.AIInterface" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/AIInterface.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3492" y="1614"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="19" language="java" name="edu.sru.brian.tictactoegame.vision.OpenCVExtension" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/OpenCVExtension.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1241" y="-227"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="edu.sru.brian.tictactoegame.decisiontree.WriteXMLFile" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/WriteXMLFile.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1494" y="-245"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="21" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TreeNodeMarkerV3.TOOLSTATE" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TreeNodeMarkerV3.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="926" y="637"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="22" language="java" name="edu.sru.brian.tictactoegame.vision.InterfaceImageStream" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/InterfaceImageStream.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1517" y="1105"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="23" language="java" name="edu.sru.brian.tictactoegame.WinnerRowID" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/WinnerRowID.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1720" y="2428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="edu.sru.brian.tictactoegame.decisiontree.DefaultGenerateDescisionTree" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/DefaultGenerateDescisionTree.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2080" y="1652"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="25" language="java" name="edu.sru.brian.tictactoegame.Markers" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/Markers.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2857" y="3238"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="26" language="java" name="edu.sru.brian.tictactoegame.decisiontree.NodePanel" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/NodePanel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4096" y="1335"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TreeNodeMaker" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TreeNodeMaker.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1713" y="-236"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="edu.sru.brian.tictactoegame.decisiontree.narytree.NTPreorderIterator" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/narytree/NTPreorderIterator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="452" y="1526"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="29" language="java" name="edu.sru.brian.tictactoegame.decisiontree.GameTreeElementNodeInterface" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/GameTreeElementNodeInterface.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4707" y="610"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="30" language="java" name="edu.sru.brian.tictactoegame.MinMaxTreeAI" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/MinMaxTreeAI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2782" y="1150"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="edu.sru.brian.tictactoegame.decisiontree.narytree.NaryTree" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/narytree/NaryTree.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1131" y="2370"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="edu.sru.brian.tictactoegame.vision.WebCameraStream" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/WebCameraStream.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1139" y="700"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="edu.sru.brian.tictactoegame.vision.WebCameraStreamFrame" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/WebCameraStreamFrame.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1606" y="204"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TreeNodeMarkerV3" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TreeNodeMarkerV3.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="938" y="180"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TreeNodeMarkerV2" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TreeNodeMarkerV2.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3607" y="64"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="edu.sru.brian.tictactoegame.GameChecker" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/GameChecker.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1699" y="2073"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="edu.sru.brian.tictactoegame.vision.CameraImageSaverFrame" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/CameraImageSaverFrame.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1344" y="240"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="edu.sru.brian.tictactoegame.decisiontree.narytree.NTInorderIterator" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/narytree/NTInorderIterator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="709" y="1526"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="edu.sru.brian.tictactoegame.vision.ImageFrame" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/ImageFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1920" y="-227"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="40" language="java" name="edu.sru.brian.tictactoegame.BoardModelInterface" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/BoardModelInterface.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1145" y="-60"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="41" language="java" name="edu.sru.brian.tictactoegame.vision.BottomCameraStream" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/BottomCameraStream.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2394" y="619"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="edu.sru.brian.tictactoegame.decisiontree.narytree.NTTopToBottomBranchIterator" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/narytree/NTTopToBottomBranchIterator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="969" y="1544"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="43" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TreeNodeMarkerV2_2.TOOLSTATE" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TreeNodeMarkerV2_2.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3933" y="646"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="44" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TTTGameData" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TTTGameData.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1645" y="3128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="45" language="java" name="edu.sru.brian.tictactoegame.GameStatusListener" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/GameStatusListener.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3432" y="2579"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="46" language="java" name="edu.sru.brian.tictactoegame.vision.SkeletonLineImageProcessorV2" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/SkeletonLineImageProcessorV2.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2141" y="-227"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="edu.sru.brian.tictactoegame.JavaRulesAI" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/JavaRulesAI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3804" y="948"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="48" language="java" name="edu.sru.brian.tictactoegame.WinStatus" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/WinStatus.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2830" y="2606"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="49" language="java" name="edu.sru.brian.tictactoegame.AIAbstract" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/AIAbstract.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3575" y="975"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="edu.sru.brian.tictactoegame.BoardModelTest" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/BoardModelTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2348" y="-245"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="51" language="java" name="edu.sru.brian.tictactoegame.vision.ImageStreamManager" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/ImageStreamManager.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1373" y="700"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="52" language="java" name="edu.sru.brian.tictactoegame.decisiontree.DecisionTreeFromXML" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/DecisionTreeFromXML.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1226" y="1526"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="53" language="java" name="edu.sru.brian.tictactoegame.vision.StreamPanel" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/StreamPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1646" y="628"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="54" language="java" name="edu.sru.brian.tictactoegame.PlayerAIAbstract" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/PlayerAIAbstract.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="521" y="691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="55" language="java" name="edu.sru.brian.tictactoegame.decisiontree.narytree.NTLevelorderIterator" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/narytree/NTLevelorderIterator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="340" y="1218"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="56" language="java" name="edu.sru.brian.tictactoegame.vision.HoughLineImageProcessor" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/HoughLineImageProcessor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2540" y="-227"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="57" language="java" name="edu.sru.brian.tictactoegame.PlayerAIInterface" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/PlayerAIInterface.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="171" x="473" y="922"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="58" language="java" name="edu.sru.brian.tictactoegame.BoardModel1DArray" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/BoardModel1DArray.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2004" y="2127"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="edu.sru.brian.tictactoegame.Game" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/Game.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2557" y="2258"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="edu.sru.brian.tictactoegame.decisiontree.CharacterIncrementer" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/CharacterIncrementer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2759" y="-209"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="61" language="java" name="edu.sru.brian.tictactoegame.decisiontree.TreeNodeMarkerV2_2" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/TreeNodeMarkerV2_2.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4456" y="155"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="62" language="java" name="edu.sru.brian.tictactoegame.PlayerAIEnforcer" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/PlayerAIEnforcer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2010" y="1096"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="63" language="java" name="edu.sru.brian.tictactoegame.decisiontree.GameDTreeXMLConstants" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/GameDTreeXMLConstants.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2994" y="-96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="64" language="java" name="edu.sru.brian.tictactoegame.decisiontree.GameTreeElementNode" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/GameTreeElementNode.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4697" y="228"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="65" language="java" name="edu.sru.brian.tictactoegame.vision.AbstractImageStream" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/AbstractImageStream.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2645" y="204"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="66" language="java" name="edu.sru.brian.tictactoegame.decisiontree.narytree.NTPostorderIterator" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/narytree/NTPostorderIterator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1480" y="1526"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="67" language="java" name="edu.sru.brian.tictactoegame.TicTacToeBoardGUI" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/TicTacToeBoardGUI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3225" y="898"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="68" language="java" name="edu.sru.brian.tictactoegame.TurnListener" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/TurnListener.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3217" y="2579"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="69" language="java" name="edu.sru.brian.tictactoegame.decisiontree.ComponentDragEvent" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/ComponentDragEvent.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3252" y="-191"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="70" language="java" name="edu.sru.brian.tictactoegame.vision.TopCameraStream" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/TopCameraStream.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1926" y="619"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="71" language="java" name="edu.sru.brian.tictactoegame.RandomMarker" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/RandomMarker.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3027" y="2570"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="72" language="java" name="edu.sru.brian.tictactoegame.vision.NAOCameraStreamFrame" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/NAOCameraStreamFrame.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1891" y="267"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="73" language="java" name="edu.sru.brian.tictactoegame.vision.Line" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/Line.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1751" y="1159"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="74" language="java" name="edu.sru.brian.tictactoegame.decisiontree.DragListener" project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/DragListener.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4030" y="1893"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="75" language="java" name="edu.sru.brian.tictactoegame.decisiontree.GeneratePurnedDescisionTree" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/GeneratePurnedDescisionTree.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1794" y="1652"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="76" language="java" name="edu.sru.brian.tictactoegame.vision.ImageStreamManager.LocalThread" 
+    project="NAOHumanoid2" file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/vision/ImageStreamManager.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1215" y="1087"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="77" language="java" name="edu.sru.brian.tictactoegame.decisiontree.narytree.NaryTreeData" 
+    project="NAOHumanoid2" 
+    file="/NAOHumanoid2/src/edu/sru/brian/tictactoegame/decisiontree/narytree/NTLevelorderIterator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="174" y="1544"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="78">    
+    <bendpoint x="4420" y="543"/>    
+    <end type="SOURCE" refId="61" navigable="false">      
+      <attribute id="79" name="aryNodePanel">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="80" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="81">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="82" name="playerAI">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="83" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="62" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="84">    
+    <bendpoint x="3810" y="543"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="85" name="mainGUI">        
+        <position height="0" width="0" x="-2728" y="-160"/>      
+      </attribute>      
+      <multiplicity id="86" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2728" y="-160"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="87">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="88" name="writer">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="89" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="91" name="lineStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="92" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <bendpoint x="2184" y="3280"/>    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="94" name="initMarker">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="95" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="96">    
+    <bendpoint x="3069" y="2245"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="97" name="gameStatusListeners">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </attribute>      
+      <multiplicity id="98" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="45" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="99">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="59"/>  
+  </generalization>  
+  <association id="100">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="101" name="camManager">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="102" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="103">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="21"/>  
+  </nesting>  
+  <association id="104">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="105" name="parent">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="106" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="107">    
+    <bendpoint x="3768" y="543"/>    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="108" name="links">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="109" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="110">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="111" name="mainGame">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </attribute>      
+      <multiplicity id="112" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="113">    
+    <end type="SOURCE" refId="61" navigable="false">      
+      <attribute id="114" name="panel">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="115" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="116">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="117" name="camPane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="118" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="119">    
+    <bendpoint x="3684" y="543"/>    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="120" name="startNode">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="121" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="122">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="123" name="camStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="124" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="125">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="126" name="botCamPane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="127" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="128">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <association id="129">    
+    <end type="SOURCE" refId="44" navigable="false">      
+      <attribute id="130" name="ROOT">        
+        <position height="0" width="0" x="-816" y="-1252"/>      
+      </attribute>      
+      <multiplicity id="131" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-816" y="-1252"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="132">    
+    <bendpoint x="3090" y="1294"/>    
+    <bendpoint x="3090" y="2245"/>    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="68"/>  
+  </realization>  
+  <association id="133">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="134" name="camPane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="135" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="136">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="137" name="game">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="138" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="36" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="139">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="140" name="camPane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="141" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="142">    
+    <bendpoint x="3350" y="1294"/>    
+    <bendpoint x="3350" y="2245"/>    
+    <bendpoint x="3350" y="3104"/>    
+    <bendpoint x="3348" y="3216"/>    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="143" name="curTurn">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="144" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="145">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="146" name="randMarker">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </attribute>      
+      <multiplicity id="147" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="148">    
+    <end type="SOURCE" refId="75" navigable="false">      
+      <attribute id="149" name="game">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="150" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="36" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="151">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <generalization id="152">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="65"/>  
+  </generalization>  
+  <association id="153">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="154" name="marker">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="155" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="156">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="157" name="children">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="158" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="159">    
+    <bendpoint x="4441" y="543"/>    
+    <end type="SOURCE" refId="61" navigable="false">      
+      <attribute id="160" name="links">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="161" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="162">    
+    <end type="SOURCE" refId="70" navigable="false">      
+      <attribute id="163" name="camera">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="164" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="165">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="166" name="gameStatusListeners">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </attribute>      
+      <multiplicity id="167" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="45" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="168">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="169" name="winningRowIDs">        
+        <position height="0" width="0" x="-2884" y="-1700"/>      
+      </attribute>      
+      <multiplicity id="170" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2884" y="-1700"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="171">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="172" name="root">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="173" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="174">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="175" name="camStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="176" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="177">    
+    <end type="SOURCE" refId="75" navigable="false">      
+      <attribute id="178" name="root">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="179" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="180">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="181" name="root">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="182" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="183">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="184" name="camera">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="185" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="186">    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="187" name="privateThread">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="188" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="76" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="189">    
+    <bendpoint x="2583" y="543"/>    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="190" name="camera">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="191" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="192">    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="193" name="imageList">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="194" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="195">    
+    <bendpoint x="2784" y="2245"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="196" name="turnListeners">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </attribute>      
+      <multiplicity id="197" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="68" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="198">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="199" name="nodeList">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="200" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="201">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="202" name="linePane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="203" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="204">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="205" name="topCamManager">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="206" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="207">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="208" name="userStream">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="209" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="210">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="211" name="topLinePane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="212" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="213">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="214" name="root">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="215" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="216">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="217" name="todo">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="218" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="219">    
+    <end type="SOURCE" refId="44" navigable="false">      
+      <attribute id="220" name="marker">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="221" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="222">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="223" name="links">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="224" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="225">    
+    <bendpoint x="3747" y="543"/>    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="226" name="aryNodePanel">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="227" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="228">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <association id="229">    
+    <bendpoint x="3634" y="2245"/>    
+    <bendpoint x="3634" y="3104"/>    
+    <bendpoint x="3632" y="3284"/>    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="230" name="myMarker">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="231" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="232">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="233" name="nodes">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="234" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="235">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="65"/>  
+  </generalization>  
+  <association id="236">    
+    <bendpoint x="1711" y="2245"/>    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="237" name="root">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="238" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="239">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="240" name="botCamManager">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="241" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="242">    
+    <bendpoint x="2484" y="3104"/>    
+    <bendpoint x="2416" y="3492"/>    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="243" name="curTurn">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="244" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="245">    
+    <end type="SOURCE" refId="44" navigable="false">      
+      <attribute id="246" name="status">        
+        <position height="0" width="0" x="-1240" y="-1668"/>      
+      </attribute>      
+      <multiplicity id="247" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-1240" y="-1668"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="248">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="249" name="linePane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="250" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="251">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="252" name="winStatus">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </attribute>      
+      <multiplicity id="253" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="48" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="254">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="255" name="turnListeners">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </attribute>      
+      <multiplicity id="256" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2288" y="-696"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="68" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="257">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="258" name="curToolState">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="259" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="260">    
+    <bendpoint x="2604" y="543"/>    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="261" name="camera">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="262" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="263">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="264" name="boardFrame">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="265" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="266">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="267" name="topCameraStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="268" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="70" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="269">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="270">    
+    <bendpoint x="127" y="1294"/>    
+    <bendpoint x="127" y="2245"/>    
+    <bendpoint x="127" y="3104"/>    
+    <bendpoint x="1304" y="3656"/>    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="271" name="myMarker">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="272" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="273">    
+    <bendpoint x="1210" y="1294"/>    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="274" name="game">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </attribute>      
+      <multiplicity id="275" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="276">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="277" name="updateStream">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="278" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="279">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="280" name="startNode">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="281" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="282">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="65"/>  
+  </generalization>  
+  <association id="283">    
+    <bendpoint x="4378" y="543"/>    
+    <end type="SOURCE" refId="61" navigable="false">      
+      <attribute id="284" name="startLink">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="285" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="286">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="287" name="camManager">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="288" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="289">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="54"/>  
+  </generalization>  
+  <association id="290">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="291" name="botCameraStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="292" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="293">    
+    <bendpoint x="3329" y="2245"/>    
+    <bendpoint x="3329" y="3104"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="294" name="state">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="295" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="296">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="297" name="curToolState">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="298" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="299">    
+    <end type="SOURCE" refId="75" navigable="false">      
+      <attribute id="300" name="todo">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="301" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="302">    
+    <bendpoint x="4399" y="543"/>    
+    <end type="SOURCE" refId="61" navigable="false">      
+      <attribute id="303" name="startNode">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="304" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="305">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="306" name="botLineStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="307" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="308">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="309" name="EMPTY">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="310" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="311">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="312" name="mainGame">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </attribute>      
+      <multiplicity id="313" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="314">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <association id="315">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="316" name="camStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="317" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="318">    
+    <end type="SOURCE" refId="75" navigable="false">      
+      <attribute id="319" name="writer">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="320" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="321">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <association id="322">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="323" name="todo">        
+        <position height="0" width="0" x="-2604" y="-908"/>      
+      </attribute>      
+      <multiplicity id="324" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2604" y="-908"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="77" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="325">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="326" name="links">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="327" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="328">    
+    <end type="SOURCE" refId="66" navigable="false">      
+      <attribute id="329" name="root">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="330" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="331">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="332" name="topLineStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="333" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="334">    
+    <bendpoint x="405" y="2245"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="335" name="root">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="336" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="337">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="29"/>  
+  </realization>  
+  <association id="338">    
+    <bendpoint x="1732" y="2245"/>    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="339" name="walk">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="340" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="341">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="342" name="panel">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="343" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="344">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="57"/>  
+  </realization>  
+  <association id="345">    
+    <bendpoint x="3069" y="1294"/>    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="346" name="game">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </attribute>      
+      <multiplicity id="347" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="348">    
+    <bendpoint x="2325" y="2245"/>    
+    <bendpoint x="2220" y="3104"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="349" name="myMarker">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="350" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="351">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="352" name="btnArray">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="353" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="354">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <realization id="355">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <realization id="356">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="68"/>  
+  </realization>  
+  <association id="357">    
+    <bendpoint x="2562" y="543"/>    
+    <end type="SOURCE" refId="65" navigable="false">      
+      <attribute id="358" name="stream">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="359" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="360">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="361" name="parent">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="362" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="363">    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="364" name="game">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </attribute>      
+      <multiplicity id="365" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="366">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="367" name="lineStream">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="368" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="369">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="43"/>  
+  </nesting>  
+  <association id="370">    
+    <end type="SOURCE" refId="61" navigable="false">      
+      <attribute id="371" name="curToolState">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="372" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="373">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="374" name="boardModel">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="375" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="58" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="376">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="377" name="mmTreeAI">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="378" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="379">    
+    <bendpoint x="3111" y="1294"/>    
+    <bendpoint x="3111" y="2245"/>    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="45"/>  
+  </realization>  
+  <nesting id="380">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="76"/>  
+  </nesting>  
+  <association id="381">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="382" name="botLinePane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="383" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="384">    
+    <bendpoint x="3726" y="543"/>    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="385" name="nodeSelList">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="386" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="387">    
+    <bendpoint x="3048" y="543"/>    
+    <bendpoint x="3048" y="1294"/>    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="388" name="game">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </attribute>      
+      <multiplicity id="389" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="390">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="391" name="startNode">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="392" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="393">    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="394" name="source">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="395" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="396">    
+    <bendpoint x="2108" y="3408"/>    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="397" name="markerArray">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </attribute>      
+      <multiplicity id="398" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2008" y="-1732"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="399">    
+    <bendpoint x="3705" y="543"/>    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="400" name="startLink">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="401" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="402">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="403" name="camManager">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="404" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="405">    
+    <bendpoint x="3789" y="543"/>    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="406" name="activeNodePanel">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </attribute>      
+      <multiplicity id="407" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2396" y="-508"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="408">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="409" name="node">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="410" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="411">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="412" name="game">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </attribute>      
+      <multiplicity id="413" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2564" y="-500"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="414">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="415" name="listLines">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </attribute>      
+      <multiplicity id="416" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2636" y="-360"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="73" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="417">    
+    <bendpoint x="2541" y="543"/>    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <association id="418">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="419" name="root">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </attribute>      
+      <multiplicity id="420" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2860" y="-1220"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="421">    
+    <bendpoint x="1231" y="1294"/>    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="422" name="ai">        
+        <position height="0" width="0" x="-2512" y="-784"/>      
+      </attribute>      
+      <multiplicity id="423" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-784"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="424">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="425" name="topCamPane">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </attribute>      
+      <multiplicity id="426" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2512" y="-104"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="427">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="428" name="dragListeners">        
+        <position height="0" width="0" x="-2428" y="-496"/>      
+      </attribute>      
+      <multiplicity id="429" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-2428" y="-496"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="74" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
