@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;edu.sru.thangiah.nao.fistbump&apos; to &apos;edu.sru.thangiah.nao.demo.fistbump&apos;&#x0D;&#x0A;- Original project: &apos;NAOHumanoid2&apos;&#x0D;&#x0A;- Original element: &apos;NAOHumanoid2/src/edu.sru.thangiah.nao.fistbump&apos;&#x0D;&#x0A;- Renamed element: &apos;NAOHumanoid2/src/edu.sru.thangiah.nao.demo.fistbump&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;edu.sru.thangiah.nao.fistbump&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;edu.sru.thangiah.nao.fistbump" name="edu.sru.thangiah.nao.demo.fistbump" qualified="false" references="true" stamp="1471346621908" textual="false" version="1.0"/>
+</session>

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=E\:\\CPSC 464\\NAO\\.git;C\:\\Users\\debke_000\\git\\j4kdemo\\.git;
 GitRepositoriesView.GitDirectories.relative=.git;C\:\\Users\\debke_000\\git\\j4kdemo\\.git;
+=======
+GitRepositoriesView.GitDirectories=R\:\\NAO 2\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;
+>>>>>>> c253cf31403fd17e01d5142b63585cfa4c54d5ed
 eclipse.preferences.version=1

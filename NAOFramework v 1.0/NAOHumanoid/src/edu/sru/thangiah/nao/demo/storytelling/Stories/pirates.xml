@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Story>
+	<NodesConfig>
+		<Node>
+			<Name>Start</Name>
+			<Text>You stand on the edge of a forest looking on to the ocean. The full moon lights the scene before you. You don’t have much with you; your bag has a few changes of clothes, a compass, and tomorrow’s meals. Your pockets are weighed down with silver coins.You think you can see something in the distance. At first its yellow glow is almost too faint for your eyes, but it grows stronger. Its moving closer. It emerges from the darkness. It’s a ship. You can see a tattered flag dancing in the moonlight. The flag sports a skull and cross bones. Pirates! You realize with a start. The pirates dock on the shore a short distance away. Do you want to want to</Text>
+			<Option>Stay where you are and watch the pirates from afar? It’s probably safe, they haven’t seen you… yet.</Option>
+			<Option>Hide from the pirates? You aren’t looking for trouble, and pirates are most certainly trouble.</Option>
+		</Node>
+		<Node>
+			<Name>A</Name>
+			<Text>You stay where you are. From this distance you can see most of what’s going on. The pirates are unloading large boxes onto the beach. You hear a gun shot and then they are racing to unload the boxes. Do you want to</Text>
+			<Option>Try to get closer to them without being seen? You itch with curiosity. What could be in those boxes? What was the gun shot about You want answers.</Option>
+			<Option>Retreat back into the forest? After hearing the gun shot you realize, these people are dangerous. You better find somewhere safe to hide.</Option>
+		</Node>
+		<Node>
+			<Name>B_E</Name>
+			<Text>You retreat into the forest, looking for somewhere to hide. It’s hard to see where you’re going and you trip. You fall and the contents of your bag spill out. You scrape your knees and realize with horror that your compass broke as well. It’s pieces are scattered among your clothes and food. It shouldn’t have fallen apart so easily. Something’s not right. You quickly pick your things up and sit behind a tree. It’s the best hiding place close by. You inspect the compass. It looks like it was once poorly glued together. Your mother, an explorer and scientist, gave it to you before she left on a long jungle trip. She never came back. The compass sat unused for years. Maybe it had been like this the entire time. You can’t remember. While folding your clothes back into your bag you find something strange strewn among your things. It is small, wrapped in paper, and heavy in your hands. You unwrap it carefully. The folded paper holds a key. On the inside of the paper is a map signed with what you recognize as your mother’s signature. You know the town on the map; you visited it many times when you were young. There is a single building circled on it. You decide to check it out. You walk through the woods into a nearby town to look for a way to get there. Do you want to</Text>
+			<Option>Try and hitch a ride from a local.</Option>
+			<Option>Take the train. You don’t have much money; if you take the train you won’t be able to buy food. You have a few meals in your bag but it isn’t much. </Option>
+		</Node>
+		<Node>
+			<Name>D</Name>
+			<Text>You approach the pirates, staying close to the tree line. As you get closer you can see that the boxes are not actually boxes at all, most are cages holding wild animals. One appears to be a chest. A pirate sneaks over to the chest when he thinks no one’s looking. You see him take something from it. You’re not sure but it looks like gold. The pirate hurries back to the ship. The bounty is left alone. Do you want to</Text>
+			<Option>Try to save the caged animals? Those cages look way too small for animals like that.</Option>
+			<Option>Try to grab some of the gold before any of the pirates come back?</Option>
+		</Node>
+		<Node>
+			<Name>G</Name>
+			<Text>You run for the gold. Letting all of those wild animals out of their cages seems like a really good way to get bitten anyways. You reach the chest and there are still no pirates in sight. You open it and see you were right, its filled with gold! You are about two handfuls into filling your bag when a strong hand rips you away. A pirate pushes you to the ground and points a gun in your direction. “Don’t move!” He yells. “Trying to get a hand on our booty are you?” Before you can answer, he tells you to shut up. They’re dumping your bag on the ground. They can see what you were trying to do. “Take him to the hold!” he says. You soon learn that the hold is in the part of ship where they keep prisoners like you. You aren’t the only one locked up here. You meet two bearded, crusty old men and a girl about your age. They ask if you’d be part of the escape they’re going to attempt tonight. Of course you say yes. You need to distract the guards, for about five minutes. The other prisoners have been filing down the bars on their cells for months now, in the dead of night, during storms when no one would see or hear them doing it. They can’t slip out though without the guard seeing. If they could just sneak up on the guard, and steal their weapon, all of you would get out safe. This is where your distraction is key. You can only think of two ways to distract the guard. Do you want to </Text>
+			<Option>Start screaming, acting as being locked up has driven you insane.</Option>
+			<Option>You act very friendly to the guard, and hope to distract them with some engaging conversation.</Option>
+		</Node>
+		<Node>
+			<Name>U</Name>
+			<Text>The next time the guard comes by with your daily ration of mystery meat and gruel, you thank the man and say. “You look so tired. Are you okay? Do you want to feel alright?” He’s responds “I’m okay. Just fighting with the wife lately. You know, long distance straining the marriage.” “Oh right sir, I feel ya Long distance is the worst” You say. You have never been in a long distance relationship. You ask the guard more about his troubled marriage and before long you learn that he has three dogs, all of which his wife named Cathy. His wife thinks he spends too much money on model ships, and is sad she never sees him. He needs to keep his job as a pirate though, as he’s explained to her and explains to you, because how else is he supposed to afford his extensive model ship collection. He’s so distracted when he’s telling you how two of his dogs Cathy 1 and Cathy 2 fight and its tearing him apart, that he doesn’t hear the other prisoners slip out of their cell. He doesn’t feel one of them pull the gun out of its holster until its pressed to his back. </Text>
+			<Option>GOES TO OPTION X</Option>
+		</Node>
+		<Node>
+			<Name>V</Name>
+			<Text>You start shortly after the guard comes by with your daily ration of gruel and mystery meat. You slam the food to the ground, brown chunks splatter across the cell and onto the guard. The guard laughs at you. “Guess no food for you tonight.” You scream in frustration. Then you scream louder still. You scream at the guard who then laughs at you more and walks away. You scream at the window. You scream at walls. You bang the metal bowl, still sticky from the gruel, and rap it hard against the bars of your cell. Eventually the guard comes your way again, no longer laughing. He’s visibly annoyed. He says, you’ll be quiet if you know what’s good for you. You spit in his face and insult his mother. He stands still, rigid with rage. You laugh at him, building up his anger, trying to buy time. He rolls up his sleeves and a smile settles on his lips. He takes out his ring of keys to unlock your cell, but before he has the chance, he feels the barrel of a gun pointed against his back. In all of his rage and your bouts of screaming, he didn’t notice the prisoners slip out from their cell and take his gun out of its holster.</Text>
+			<Option>GOES TO OPTION X</Option>
+		</Node>
+		<Node>
+			<Name>X</Name>
+			<Text>Using the guards keys, the other escaped prisoners unlock you from your cell. You grab some rope hanging on the wall while one of the old men holds the guard at gun point. You tie up the guard, and lock him in a cell to buy you some time. You run out onto the deck, and you see to your relief that you haven’t left the shore. It’s the dead of night. The watch man in the eagles nest snoozes in his perch. You and the group of prisoners jump into the black ocean, swimming to shore. You collapse on the sand and sigh in relief. Still half in the water, waves lick your legs. You want to lay there forever, bathing in the moon light. The rest of the group however, has other plans. They are going to go back home. They are all merchants. They invite you to come work with them. You would be selling goods to those who pass through the naval port of their town. Do you want to</Text>
+			<Option>Continue travelling with the group and work as a merchant.</Option>
+			<Option> Leave the group and make it on your own.</Option>
+		</Node>
+		<Node>
+			<Name>Z</Name>
+			<Text>You leave with the group. You travel by foot for a few days, hugging the coast. You like your new job and home with the group. You meet countless new and interesting people while selling furs. You enjoy the work but you love listening to the stories that come through more.</Text>
+		</Node>
+		<Node>
+			<Name>A_2</Name>
+			<Text>You thank the group for their offer but leave all the same. You travel by foot hugging the coast picking up odd jobs on the way. You settle in a town on the ocean, working in a restaurant. Most of your customers are sailors who tell their stories over dinner. You enjoy the work but you love listening to the stories that come through more. </Text>
+		</Node>
+		<Node>
+			<Name>F</Name>
+			<Text>You decide to try to save the animals. You get closer and you see that they are cramped their cages. Most of them are tigers. There are also a few lions and an ostrich. Still no sight of the pirates. You dash out to open the cages. Its not hard to open them once you get there. You’re a worried at first that the wild animals will hurt you once you let them out of their cages. The first tiger takes away your concern with a grateful, friendly lick as soon as you let her out. She stays close at your heels as you go and let out the rest of the animals. The ostrich screeches and runs off into the forest at release, but the big cats stay nearby. That first tiger stays the closest. You name her Lilly. With all the animals free, you head over to the chest. You were right, it is filled with gold. You shove as much into your pockets and bag as possible. You’re amazed that no pirates have shown up yet and you soon see why. It looks like the entire fleet is standing about a hundred yards away, cowering in terror. You realize with a laugh, you must be quite scary surrounded by a herd of lions and tigers. You wave in to them and start your journey into town. Most of the cats leave you on the walk into town. They seem to have better things to do than go on adventures with you. Lilly stays. In town you meet a man with a wide straw hat and red suspenders over a big belly. He tells you that he is the ring master of a circus travelling through town. He thinks, with your perfect handling of your tiger, that you and Lilly would be great for his show. Do you want to join the circus?</Text>
+			<Option>Yes! It’s always so fun to watch the circus; it would probably be even more fun to work there!</Option>
+			<Option>No. You thank the man for his offer but tell him you don’t think that Lilly would be the biggest fan of the spot light.</Option>
+		</Node>
+		<Node>
+			<Name>Q</Name>
+			<Text>You do not join the circus. The large bellied man is sad to see you go, but he understands. You walk through town with Lilly. It is very pretty and you decide you’d like to live here. You buy a house using most of your new gold. You think Lilly will really enjoy the big back yard. Afterwards you don’t have much money left so you fill out some job applications. Two different places call you back and offer you a job, the library and the police station. Do you want to choose</Text>
+			<Option>To work at the police station.</Option>
+			<Option>To work at the library.</Option>
+		</Node>
+		<Node>
+			<Name>S</Name>
+			<Text>You accept the job at the police station. You start the next week. Your job is boring at first, mostly just answering calls around the office. After a while they promote you to working in the field. You love being a cop. Most of the officers have police dogs, but not you. You have a police tiger! Criminals practically surrender when they see you and your tiger. You two have always made a good team against the bad guys, even from the very beginning.</Text>
+		</Node>
+		<Node>
+			<Name>T</Name>
+			<Text>You take the job at the library. Being a police officer seems cool, but you much prefer the adventures found between the pages of good books. You start at the library and know you made the right choice. You spend most of your time helping people find books, organizing shelves, and reading to kids. At night you curl up in front of the fireplace in your living room, with Lilly purring at your side, reading about everything from aliens, to centaurs to pirates.</Text>
+		</Node>
+		<Node>
+			<Name>P</Name>
+			<Text>You accept the man’s offer and join the troop of carnies immediately. You become good friends with the fire dancer, the sword swallower, and the lion tamer. The lion tamer, Carl, is amazed by your bond with Lilly. You two make an amazing team. Really, she becomes your best friend of all. You love the travelling and you love making people smile, but you are not happy. You want somewhere to call home. You have enough gold left from your run in with the pirates to do whatever you want. There are two things you want to pursue. Do you want to</Text>
+			<Option>Use your experiences from working in the circus to start your own business of training big cats for TV? If you did that, you could make good money and make people smile at the same time.</Option>
+			<Option>Use your experience from working with all the animals to start a wild life reservation? You want to give all wild animals somewhere safe to go.</Option>
+		</Node>
+		<Node>
+			<Name>R</Name>
+			<Text>You open up a business with the money. You buy big cats from questionable breeders, in order to insure they have a good home. You give them a good home. Happy cats make good performers. You work mostly with movies, bringing your cats to the silver screen. You get rich within a year in the business, earning three times the amount of gold you initially invested.You spend the rest of your years in a mansion in Hollywood, with wide stretching lawns where your big cats snooze in the sunlight.</Text>
+		</Node>
+		<Node>
+			<Name>W</Name>
+			<Text>You leave the circus to focus on starting the wild life reservation. You spend most of your gold on the land, and the rest on a little log cabin located at the heart of it. Here you spend many years caring for the animals that call this place home. You happily call it home too.</Text>
+		</Node>
+		<Node>
+			<Name>J</Name>
+			<Text>You decide to hitch hike. An elderly couple eventually agrees to drive you to the circled location on your map. They’re from that town. They tell you it’s an abandoned house, that its haunted, and that everything inside is untouched because no one dares to go in. They warn you against entering. You thank them for their kind advice but go anyways. They are not happy about leaving you at the house.The front door of the place is unlocked. They were right, the place is untouched. Everything is coated in a thick layer of dust. It feels lived in, warm, but its clear that nothing has been touched in ages. You don’t find this creepy. You hold the key tightly, looking for something to unlock. You see a chest and a door with a padlock keeping it closed.</Text>
+			<Option>GO TO Y</Option>
+		</Node>
+		<Node>
+			<Name>K</Name>
+			<Text>You take the train. You won’t worry about running out of food until it happens. The train takes you into town but the station is five miles away from the mark on the map. On the walk, you come across an apple orchard. Seeing an opportunity for a free meal, you wander through the orchard, collecting apples. You cross through the orchard and a pond. You make a fire and boil some pond water. You build shelter out of fallen branches. You eat the apples and then some crackers from your bag. You feel very full. The grass is soft like your bed back home. You feel very tired.You sleep well that night and finish the journey the next day. You’re surprised to find that the map leads you to an abandoned house in a neighborhood. The front door of the place is unlocked. Everything is coated in a thick layer of dust. It feels lived in, warm, but its clear that nothing has been touched in ages. This place is creepy. You hold the key tightly, looking for what you’re supposed to unlock. You see a chest and a door with a padlock keeping it closed.</Text>
+			<Option>GO TO Y</Option>
+		</Node>
+		<Node>
+			<Name>Y</Name>
+			<Text>Do you want to</Text>
+			<Option>Try the chest?</Option>
+			<Option>Try the door?</Option>
+		</Node>
+		<Node>
+			<Name>L</Name>
+			<Text>Once you get closer to the chest you realize it that it no longer locks, because it is so old. It opens easily without using the key. You decide to try the door next</Text>
+			<Option>GO TO M</Option>
+		</Node>
+		<Node>
+			<Name>M</Name>
+			<Text>The padlock clicks open when you use the key and the door swings away to show a dark stair case leading to the basement. You see a faint blue glow somewhere deep below. You venture down. You find many people working in an impossibly big room, at least five times larger than the house above. There is a monitor showing a live feed of the room you just walked through. These people in the basement must have watched you come in. They tell you later that they had been expecting you. They also tell you that your mother was not actually a scientist lost in the jungle so long ago, but rather she is a secret agent who was captured while in the field. You find out that she is currently being held prisoner on an island off of England. You learn that she suspected her last mission was especially dangerous and had left the compass with the key and the map in case she did not come back. She wanted you to know where to find the people who could tell you the truth about what happened to her. They ask if you would like to help them try to get her back. You agree, and learn to be a spy and prove to be a natural at it just like your mother. After a year of training you and another spy work together to rescue her from her prison. There are a few close calls, but everyone makes it out okay in the end. It turns out you can’t hide from adventure, like you tried to hide from the pirates so very long ago; adventure is in your blood.</Text>
+		</Node>
+	</NodesConfig>
+	<LinkingPhase>
+		<Node>
+			<Linker>Start</Linker>
+			<LinkedNode>A</LinkedNode>
+			<LinkedNode>B_E</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>A</Linker>
+			<LinkedNode>D</LinkedNode>
+			<LinkedNode>B_E</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>B_E</Linker>
+			<LinkedNode>J</LinkedNode>
+			<LinkedNode>K</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>D</Linker>
+			<LinkedNode>F</LinkedNode>
+			<LinkedNode>G</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>G</Linker>
+			<LinkedNode>U</LinkedNode>
+			<LinkedNode>V</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>U</Linker>
+			<LinkedNode>X</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>V</Linker>
+			<LinkedNode>X</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>X</Linker>
+			<LinkedNode>Z</LinkedNode>
+			<LinkedNode>A_2</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>F</Linker>
+			<LinkedNode>P</LinkedNode>
+			<LinkedNode>Q</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Q</Linker>
+			<LinkedNode>S</LinkedNode>
+			<LinkedNode>T</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>P</Linker>
+			<LinkedNode>R</LinkedNode>
+			<LinkedNode>W</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>J</Linker>
+			<LinkedNode>Y</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>K</Linker>
+			<LinkedNode>Y</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Y</Linker>
+			<LinkedNode>L</LinkedNode>
+			<LinkedNode>M</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>L</Linker>
+			<LinkedNode>M</LinkedNode>
+		</Node>
+	</LinkingPhase>
+</Story>

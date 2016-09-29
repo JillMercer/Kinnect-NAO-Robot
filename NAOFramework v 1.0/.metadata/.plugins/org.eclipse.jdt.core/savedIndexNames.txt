@@ -1,0 +1,1 @@
+INDEX VERSION 1.129+R:\NAO 2\NAOFramework v 1.0\.metadata\.plugins\org.eclipse.jdt.core

@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <qualifiedTypeNameHistroy/>
+=======
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="edu.sru.thangiah.nao.demo.KinectTracking"/>
+</qualifiedTypeNameHistroy>
+>>>>>>> c253cf31403fd17e01d5142b63585cfa4c54d5ed

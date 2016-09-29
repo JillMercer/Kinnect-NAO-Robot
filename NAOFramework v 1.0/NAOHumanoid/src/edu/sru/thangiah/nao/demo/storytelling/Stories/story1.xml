@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Story>
+	<NodesConfig>
+		<Node>
+			<Name>Start</Name>
+			<Text>Your traveling to a distant city, one that you’ve never been to before. As you get close to the city, you hear what sounds like a small fight a little off the path. You venture closer to see what is happening. Three guards are trying to trap one man. The man looks to be a weary traveller like yourself, wearing cheap leather clothes, and also like yourself, has a decent sword. What do you do?</Text>
+			<Option> Continue to the city, this has nothing to do with you.</Option>
+			<Option>Help the guards. Maybe they can help you can get a job.</Option>
+			<Option>Attack the guards, this isn’t a fair fight, and you like to fight!</Option>
+		</Node>
+		<Node>
+			<Name>Node1</Name>
+			<Text>Another group of guards finds you. They draw their weapons and start to speak in a language you don’t understand. What do you do?</Text>
+			<Option> Try to explain yourself. You did nothing wrong.</Option>
+			<Option>Attack the guards! Who do they think they are!?</Option>
+			<Option>Run! They must be slower.</Option>
+		</Node>
+		<Node>
+			<Name>Node2</Name>
+			<Text>You try to help the guards, but end up killing the person they were trying to capture. The guards speak in a language that you don’t understand, but one of them points to you and says “murderer”. What do you do?</Text>
+			<Option>Try to explain yourself. You were just trying to help!</Option>
+			<Option>Attack the guards! You can take them!</Option>
+			<Option>Run! They must be tired.</Option>
+		</Node>
+		<Node>
+			<Name>Node3</Name>
+			<Text>The two of you end up killing the three guards. The person you helped looks at you suspiciously and doesn’t put his sword away. What do you do?</Text>
+			<Option>Attack him, why not?</Option>
+			<Option>Start to loot the bodies of the guards, but keeping an eye on the other guy.</Option>
+			<Option>Leave the area, but keep an eye on the other guy.</Option>
+		</Node>
+		<Node>
+			<Name>Node4</Name>
+			<Text>The guards don’t understand you and attack you. You are caught off guard and killed.</Text>
+		</Node>
+		<Node>
+			<Name>Node5</Name>
+			<Text>You kill everyone! All the loot is yours!</Text>
+		</Node>
+		<Node>
+			<Name>Node6</Name>
+			<Text>You escape, but you dare not go to the city. You start your travels in another direction.</Text>
+		</Node>
+		<Node>
+			<Name>Node7</Name>
+			<Text>The man ends up trusting you somewhat. He puts his sword away, and helps you loot the bodies. The two of you decide to travel together, but not to the city.</Text>
+		</Node>
+	</NodesConfig>
+	<LinkingPhase>
+		<Node>
+			<Linker>Start</Linker>
+			<LinkedNode>Node1</LinkedNode>
+			<LinkedNode>Node2</LinkedNode>
+			<LinkedNode>Node3</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node1</Linker>
+			<LinkedNode>Node4</LinkedNode>
+			<LinkedNode>Node5</LinkedNode>
+			<LinkedNode>Node6</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node2</Linker>
+			<LinkedNode>Node4</LinkedNode>
+			<LinkedNode>Node5</LinkedNode>
+			<LinkedNode>Node6</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Node3</Linker>
+			<LinkedNode>Node5</LinkedNode>
+			<LinkedNode>Node7</LinkedNode>
+			<LinkedNode>Node6</LinkedNode>
+		</Node>
+	</LinkingPhase>
+</Story>

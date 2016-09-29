@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Story>
+	<NodesConfig>
+		<Node>
+			<Name>Start</Name>
+			<Text>It is summertime again, vacation time. You go to your uncle's house. He takes you on a tour around the city. There are many old buildings, but the oldest of all is on Main Street. The address is 880. He says that it is haunted, but you don't believe him. </Text>
+			<Option>Do you go inside?</Option>
+			<Option>Do you stay there? </Option>
+		</Node>
+		<Node>
+			<Name>Page2</Name>
+			<Text>You say, "I will go inside." He says, "I want to watch you." You start up the stone steps of the old haunted house. You open the door and step inside and suddenly a sharp arrow streaks across in front of you! But it misses you.</Text>
+			<Option>Do you go up the staircase?</Option>
+			<Option>Do you go through the swinging doors?</Option>
+		</Node>
+		<Node>
+			<Name>Page3</Name>
+			<Text>You stay there. Then you decide to go home, have an ice cream, and go to bed. </Text>
+		</Node>
+		<Node>
+			<Name>Page4</Name>
+			<Text>You go up the stairs. You lean against the railing and it breaks. You fall and that's the end of you.</Text>
+		</Node>
+		<Node>
+			<Name>Page5</Name>
+			<Text>You go through the swinging doors. You walk through the room.</Text>
+			<Option>Do you go into the closet?</Option>
+			<Option>Do you go into a passageway under the house?</Option>
+		</Node>
+		<Node>
+			<Name>Page6</Name>
+			<Text>You go into the closet. You fall through a trapdoor and break your leg. The walls are too smooth to climb. There is no other way up. </Text>
+		</Node>
+		<Node>
+			<Name>Page7</Name>
+			<Text>You go into a pasaageway under the house. You make your way along and it leads to a trapdoor that takes you back to where you started from. You meet a policeman at the top and he says to you, "You were lucky to get out of there. Don't ever go in there again!" You go home and have some ice cream.</Text>
+		</Node>
+	</NodesConfig>
+	<LinkingPhase>
+		<Node>
+			<Linker>Start</Linker>
+			<LinkedNode>Page2</LinkedNode>
+			<LinkedNode>Page3</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Page2</Linker>
+			<LinkedNode>Page4</LinkedNode>
+			<LinkedNode>Page5</LinkedNode>
+		</Node>
+		<Node>
+			<Linker>Page5</Linker>
+			<LinkedNode>Page6</LinkedNode>
+			<LinkedNode>Page7</LinkedNode>
+		</Node>
+	</LinkingPhase>
+</Story>
