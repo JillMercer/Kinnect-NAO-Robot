@@ -36,7 +36,7 @@ public class KinectTracking extends Demo {
 	
 	private class KinectRobot extends DemoRobot {
 
-		//Wave wave;
+		FistBump fistBump;
 		
 		public KinectRobot(String name, String demoName, SynchronizedConnectDemo connect) throws Exception {
 			super(name, demoName, connect);
@@ -49,7 +49,7 @@ public class KinectTracking extends Demo {
 
 		@Override
 		protected void init() throws Exception {	
-			//wave = new Wave(name, connect);
+			fistBump = new FistBump(name, connect);
 		}
 
 		@Override
@@ -60,7 +60,7 @@ public class KinectTracking extends Demo {
 		@Override
 		protected void frontTactil() {
 			try {
-				exit();
+				fistBump.raiseArmforBump();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -75,6 +75,23 @@ public class KinectTracking extends Demo {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		/*
+		 * If any of the sensors on the right hand of the robot is
+		 * triggered, say nice and lower the right arm
+		 */
+		@Override
+		protected void handRightBack() {
+			fistBump.handBumped();
+		}
+		
+		@Override
+		protected void handRightRight() {
+			fistBump.handBumped();
+		}
+		@Override
+		protected void handRightLeft() {
+			fistBump.handBumped();
 		}
 
 	}

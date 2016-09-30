@@ -19,5 +19,12 @@
 	<classpathentry exported="true" kind="lib" path="libs/slf4j-simple-1.6.99.jar"/>
 	<classpathentry kind="lib" path="libs/miglayout15-swing.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="j4klib/gluegen-rt-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="j4klib/gluegen-rt-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="j4klib/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="j4klib/jogl-all-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="j4klib/jogl-all-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="j4klib/jogl-all.jar"/>
+	<classpathentry kind="lib" path="j4klib/ufdw.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
