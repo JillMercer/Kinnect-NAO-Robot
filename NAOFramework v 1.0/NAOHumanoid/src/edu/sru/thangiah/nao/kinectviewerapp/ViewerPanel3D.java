@@ -10,6 +10,8 @@ import edu.ufl.digitalworlds.j4k.DepthMap;
 import edu.ufl.digitalworlds.j4k.Skeleton;
 import edu.ufl.digitalworlds.j4k.VideoFrame;
 
+
+
 /*
  * Copyright 2011-2014, Digital Worlds Institute, University of 
  * Florida, Angelos Barmpoutis.
@@ -139,8 +141,19 @@ public class ViewerPanel3D extends OpenGLPanel
 	    		{
 	    			skeletons[i].draw(gl);
 	    			skeletons[i].increaseTimesDrawn();
-	    		}
+	    	
+	    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
+	    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
+	    			float jointX = skeletons[0].get3DJointX(1);
+	    			float jointY = skeletons[0].get3DJointY(1);
+	    			float jointZ = skeletons[0].get3DJointZ(1);
+	    			
+	    		
+	    				String content = "Joint value of x = " + jointX + "/n  Joint value of Y = " + jointY + "/n Joint value of Z = " + jointZ + "/n" ;
+	    				System.out.println(content);
+	    				
 	    	}
+	    }
 		
 	    popMatrix();
 	}
