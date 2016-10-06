@@ -144,12 +144,12 @@ public class ViewerPanel3D extends OpenGLPanel
 	    	
 	    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
 	    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
-	    			float jointX = skeletons[0].get3DJointX(1);
-	    			float jointY = skeletons[0].get3DJointY(1);
-	    			float jointZ = skeletons[0].get3DJointZ(1);
+	    			float jointX = skeletons[i].get3DJointX(4);
+	    			float jointY = skeletons[i].get3DJointY(4);
+	    			float jointZ = skeletons[i].get3DJointZ(4);
 	    			
 	    		
-	    				String content = "Joint value of x = " + jointX + "/n  Joint value of Y = " + jointY + "/n Joint value of Z = " + jointZ + "/n" ;
+	    				String content = "Joint value of x = " + jointX + " Joint value of Y = " + jointY + " Joint value of Z = " + jointZ + " " ;
 	    				System.out.println(content);
 	    				
 	    	}
