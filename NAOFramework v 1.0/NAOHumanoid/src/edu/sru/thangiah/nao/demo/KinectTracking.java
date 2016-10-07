@@ -4,9 +4,27 @@
 package edu.sru.thangiah.nao.demo;
 
 import com.aldebaran.qi.helper.proxies.ALTextToSpeech;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
+import edu.ufl.digitalworlds.gui.DWApp;
+import edu.ufl.digitalworlds.j4k.J4K1;
+import edu.ufl.digitalworlds.j4k.J4K2;
+import edu.ufl.digitalworlds.j4k.J4KSDK;
 import edu.sru.thangiah.nao.connection.SynchronizedConnectDemo;
 import edu.sru.thangiah.nao.demo.fistbump.FistBump;
 import edu.sru.thangiah.nao.demo.gui.ApplicationsOptionDialog;
+import edu.sru.thangiah.nao.kinectviewerapp.KinectViewerApp;
 
 /**
  * @author Brady Rainey
@@ -32,6 +50,10 @@ public class KinectTracking extends Demo {
 	@Override
 	protected void run() throws Exception {
 		robots.add(new KinectRobot(robotNames.get(0), demoName, connection));
+		DWApp.createMainFrame("Kinect Viewer App");
+		DWApp.app = new KinectViewerApp();
+		DWApp.setFrameSize(730,570,null);
+		
 	}
 	
 	private class KinectRobot extends DemoRobot {
@@ -71,6 +93,7 @@ public class KinectTracking extends Demo {
 		protected void rearTactil() {
 			try {
 				exit();
+				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
