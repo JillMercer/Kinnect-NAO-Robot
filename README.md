@@ -3,9 +3,12 @@
 
 Java 4 kinect libraries and source code citation: 
 
-A. Barmpoutis. "Tensor Body: Real-time Reconstruction of the Human Body 
-and Avatar Synthesis from RGB-D', IEEE Transactions on Cybernetics, 
-October 2013, Vol. 43(5), Pages: 1347-1356. 
+*A. Barmpoutis. "Tensor Body: Real-time Reconstruction of the Human Body* 
+*and Avatar Synthesis from RGB-D', IEEE Transactions on Cybernetics,* 
+*October 2013, Vol. 43(5), Pages: 1347-1356.* 
+
+*A. Barmpoutis. 'Tensor Body: Real-time Reconstruction of the Human Body and Avatar Synthesis from RGB-D', IEEE Transactions on Cybernetics, Special issue on Computer Vision for RGB-D Sensors: Kinect and Its Applications,*
+*October 2013, Vol. 43(5), Pages: 1347-1356*
 
 Copyright 2011-2014, Digital Worlds Institute, University of 
 Florida, Angelos Barmpoutis.
