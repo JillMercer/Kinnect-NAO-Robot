@@ -1,5 +1,13 @@
 package edu.sru.thangiah.nao.kinectviewerapp;
 
+import java.io.PrintStream;
+import java.io.OutputStream;
+import java.awt.*;
+import java.io.*;
+import java.util.*;
+import java.util.List;
+import javax.swing.*;
+
 import edu.ufl.digitalworlds.gui.DWApplet;
 
 /*
@@ -41,9 +49,9 @@ public class KinectViewerApplet extends DWApplet
 {
 	public void init()
 	{
-		createMainFrame("Kinect Viewer Applet");
-    	KinectViewerApp.app=new KinectViewerApp();
-    	setFrameSize(730,570,null);
+		createMainFrame( "Kinect Viewer Applet" );
+    	KinectViewerApp.app = new KinectViewerApp();
+    	setFrameSize( 730,570,null );
 	}
 }
 

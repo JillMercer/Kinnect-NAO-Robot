@@ -2,13 +2,17 @@ package edu.sru.thangiah.nao.kinectviewerapp;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
+import java.io.PrintStream;
 
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JSlider;
+import javax.swing.JTextArea;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -67,6 +71,8 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 	JCheckBox show_video;
 	JCheckBox mask_players;
 	JLabel accelerometer;
+	JTextArea kinect_console;
+	PrintStream con;
 	
 	public void GUIsetup(JPanel p_root) {
 		
@@ -172,7 +178,17 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 		
 		controls.add(turn_off);
 		
+		controls.add(new JButton("Show Console:"));
 		
+		JPanel console = new JPanel();
+		kinect_console = new JTextArea( 10, 100 );
+		con = new PrintStream( new KinectConsole( kinect_console ));
+    	System.setOut(con);
+    	System.setErr(con);
+		JScrollPane kinect_scroll_pane = new JScrollPane(kinect_console);
+		console.add( kinect_scroll_pane);
+		
+		System.out.println("Kinect Ready.");
 		
 		setLoadingProgress("Intitializing OpenGL...",60);
 		main_panel=new ViewerPanel3D();
@@ -180,8 +196,10 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 		myKinect.setViewer(main_panel);
 		myKinect.setLabel(accelerometer);
 		
-		p_root.add(main_panel, BorderLayout.CENTER);
-		p_root.add(controls, BorderLayout.SOUTH);
+		p_root.setLayout(new BoxLayout(p_root, BoxLayout.Y_AXIS));
+		p_root.add(main_panel);
+		p_root.add(controls);
+		p_root.add(console);
 		
 	}
 	

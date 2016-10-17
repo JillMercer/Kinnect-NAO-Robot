@@ -25,6 +25,7 @@ import edu.sru.thangiah.nao.connection.SynchronizedConnectDemo;
 import edu.sru.thangiah.nao.demo.fistbump.FistBump;
 import edu.sru.thangiah.nao.demo.gui.ApplicationsOptionDialog;
 import edu.sru.thangiah.nao.kinectviewerapp.KinectViewerApp;
+import edu.sru.thangiah.nao.kinectviewerapp.KinectViewerApplet;
 
 /**
  * @author Brady Rainey
@@ -50,16 +51,13 @@ public class KinectTracking extends Demo {
 	@Override
 	protected void run() throws Exception {
 		robots.add(new KinectRobot(robotNames.get(0), demoName, connection));
-		DWApp.createMainFrame("Kinect Viewer App");
-		DWApp.app = new KinectViewerApp();
-		DWApp.setFrameSize(730,570,null);
+		KinectViewerApplet kinect_window = new KinectViewerApplet();
+		kinect_window.init();
 		
 	}
 	
 	private class KinectRobot extends DemoRobot {
 
-		FistBump fistBump;
-		
 		public KinectRobot(String name, String demoName, SynchronizedConnectDemo connect) throws Exception {
 			super(name, demoName, connect);
 			// TODO Auto-generated constructor stub
@@ -71,7 +69,7 @@ public class KinectTracking extends Demo {
 
 		@Override
 		protected void init() throws Exception {	
-			fistBump = new FistBump(name, connect);
+			
 		}
 
 		@Override
@@ -82,7 +80,7 @@ public class KinectTracking extends Demo {
 		@Override
 		protected void frontTactil() {
 			try {
-				fistBump.raiseArmforBump();
+			// TODO Activate Kinect Program
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -105,16 +103,16 @@ public class KinectTracking extends Demo {
 		 */
 		@Override
 		protected void handRightBack() {
-			fistBump.handBumped();
+			
 		}
 		
 		@Override
 		protected void handRightRight() {
-			fistBump.handBumped();
+			
 		}
 		@Override
 		protected void handRightLeft() {
-			fistBump.handBumped();
+			
 		}
 
 	}
