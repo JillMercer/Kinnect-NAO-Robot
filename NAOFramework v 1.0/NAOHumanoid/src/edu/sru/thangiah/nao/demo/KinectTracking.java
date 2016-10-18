@@ -97,10 +97,7 @@ public class KinectTracking extends Demo {
 				e.printStackTrace();
 			}
 		}
-		/*
-		 * If any of the sensors on the right hand of the robot is
-		 * triggered, say nice and lower the right arm
-		 */
+		
 		@Override
 		protected void handRightBack() {
 			

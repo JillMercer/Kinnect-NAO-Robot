@@ -151,7 +151,7 @@ public class ViewerPanel3D extends OpenGLPanel
 		    			float jointX = skeletons[i].get3DJointX(j);
 		    			float jointY = skeletons[i].get3DJointY(j);
 		    			float jointZ = skeletons[i].get3DJointZ(j);
-		    			String content = "Joint is " + j + "       Joint value of x = " + jointX + " Joint value of Y = " + jointY + " Joint value of Z = " + jointZ + " " ;
+		    			String content = getJointName( j ) + ": X: " + jointX + " | Y: " + jointY + " | Z: " + jointZ;
 		    			System.out.println(content);
 	    			}				
 	    				
@@ -161,6 +161,94 @@ public class ViewerPanel3D extends OpenGLPanel
 	    popMatrix();
 	}
 	
+	private String getJointName( int jointNumber ) {
+		String jointName = null;
+		if ( jointNumber > Skeleton.JOINT_COUNT || jointNumber < 0 ) {
+			jointName = "Invalid Number";
+		} else {
+			switch ( jointNumber ) {
+			case 0:
+				jointName = "Spine Base";
+				break;
+			case 1:
+				jointName = "Spine Mid";
+				break;
+			case 2:
+				jointName = "Neck";
+				break;
+			case 3:
+				jointName = "Head";
+				break;
+			case 4:
+				jointName = "Shoulder Left";
+				break;
+			case 5:
+				jointName = "Elbow Left";
+				break;
+			case 6:
+				jointName = "Wrist Left";
+				break;
+			case 7:
+				jointName = "Hand Left";
+				break;
+			case 8:
+				jointName = "Shoulder Right";
+				break;
+			case 9:
+				jointName = "Elbow Right";
+				break;
+			case 10:
+				jointName = "Wrist Right";
+				break;
+			case 11:
+				jointName = "Hand Right";
+				break;
+			case 12:
+				jointName = "Hip Left";
+				break;
+			case 13:
+				jointName = "Knee Left";
+				break;
+			case 14:
+				jointName = "Ankle Left";
+				break;
+			case 15:
+				jointName = "Foot Left";
+				break;
+			case 16:
+				jointName = "Hip Right";
+				break;
+			case 17:
+				jointName = "Knee Right";
+				break;
+			case 18:
+				jointName = "Ankle Right";
+				break;
+			case 19:
+				jointName = "Foot Right";
+				break;
+			case 20:
+				jointName = "Spine Shoulder";
+				break;
+			case 21:
+				jointName = "Hand Tip Left";
+				break;
+			case 22:
+				jointName = "Thumb Left";
+				break;
+			case 23:
+				jointName = "Hand Tip Right";
+				break;
+			case 24:
+				jointName = "Thumb Right";
+				break;
+			case 25:
+				jointName = "Joint Count";
+				break;
+			}
+		}
+		return jointName;
+	}
 	
 	public void mouseDragged(int x, int y, MouseEvent e) {
 
@@ -183,7 +271,5 @@ public class ViewerPanel3D extends OpenGLPanel
 	public void mousePressed(int x, int y, MouseEvent e) {
 		prevMouseX = x;
 	    prevMouseY = y;
-	}
-	
-
+	}	
 }
