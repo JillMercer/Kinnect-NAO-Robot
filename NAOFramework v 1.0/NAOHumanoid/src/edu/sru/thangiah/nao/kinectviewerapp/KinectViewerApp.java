@@ -181,7 +181,7 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 		controls.add(new JButton("Show Console:"));
 		
 		JPanel console = new JPanel();
-		kinect_console = new JTextArea( 24, 100 );
+		kinect_console = new JTextArea( 25, 80 );
 		con = new PrintStream( new KinectConsole( kinect_console ));
     	System.setOut(con);
     	System.setErr(con);

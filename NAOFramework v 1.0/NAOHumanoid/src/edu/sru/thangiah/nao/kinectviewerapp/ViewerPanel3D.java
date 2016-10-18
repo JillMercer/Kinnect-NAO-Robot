@@ -141,18 +141,17 @@ public class ViewerPanel3D extends OpenGLPanel
 	    		{
 	    			skeletons[i].draw(gl);
 	    			skeletons[i].increaseTimesDrawn();
-	    	
+	    			
 	    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
 	    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
 	    			
-	    			
 	    			for(int j=0; j< Skeleton.JOINT_COUNT; j++)
 	    			{
-		    			float jointX = skeletons[i].get3DJointX(j);
-		    			float jointY = skeletons[i].get3DJointY(j);
-		    			float jointZ = skeletons[i].get3DJointZ(j);
-		    			String content = getJointName( j ) + ": X: " + jointX + " | Y: " + jointY + " | Z: " + jointZ;
-		    			System.out.println(content);
+		    			String jointX = String.format( "%.2f", skeletons[ i ].get3DJointX( j ));
+		    			String jointY = String.format( "%.2f", skeletons[ i ].get3DJointY( j ));
+		    			String jointZ = String.format( "%.2f", skeletons[ i ].get3DJointZ( j ));
+		    			String content = getJointName( j ) + ": \tX: " + jointX + "  \tY: " + jointY + "  \tZ: " + jointZ;
+		    			System.out.println( content );
 	    			}				
 	    				
 	    	}
@@ -180,67 +179,67 @@ public class ViewerPanel3D extends OpenGLPanel
 				jointName = "Head";
 				break;
 			case 4:
-				jointName = "Shoulder Left";
+				jointName = "Shoulder L";
 				break;
 			case 5:
-				jointName = "Elbow Left";
+				jointName = "Elbow L";
 				break;
 			case 6:
-				jointName = "Wrist Left";
+				jointName = "Wrist L";
 				break;
 			case 7:
-				jointName = "Hand Left";
+				jointName = "Hand L";
 				break;
 			case 8:
-				jointName = "Shoulder Right";
+				jointName = "Shoulder R";
 				break;
 			case 9:
-				jointName = "Elbow Right";
+				jointName = "Elbow R";
 				break;
 			case 10:
-				jointName = "Wrist Right";
+				jointName = "Wrist R";
 				break;
 			case 11:
-				jointName = "Hand Right";
+				jointName = "Hand R";
 				break;
 			case 12:
-				jointName = "Hip Left";
+				jointName = "Hip L";
 				break;
 			case 13:
-				jointName = "Knee Left";
+				jointName = "Knee L";
 				break;
 			case 14:
-				jointName = "Ankle Left";
+				jointName = "Ankle L";
 				break;
 			case 15:
-				jointName = "Foot Left";
+				jointName = "Foot L";
 				break;
 			case 16:
-				jointName = "Hip Right";
+				jointName = "Hip R";
 				break;
 			case 17:
-				jointName = "Knee Right";
+				jointName = "Knee R";
 				break;
 			case 18:
-				jointName = "Ankle Right";
+				jointName = "Ankle R";
 				break;
 			case 19:
-				jointName = "Foot Right";
+				jointName = "Foot R";
 				break;
 			case 20:
-				jointName = "Spine Shoulder";
+				jointName = "Spine Top";
 				break;
 			case 21:
-				jointName = "Hand Tip Left";
+				jointName = "Hand Tip L";
 				break;
 			case 22:
-				jointName = "Thumb Left";
+				jointName = "Thumb L";
 				break;
 			case 23:
-				jointName = "Hand Tip Right";
+				jointName = "Hand Tip R";
 				break;
 			case 24:
-				jointName = "Thumb Right";
+				jointName = "Thumb R";
 				break;
 			case 25:
 				jointName = "Joint Count";
