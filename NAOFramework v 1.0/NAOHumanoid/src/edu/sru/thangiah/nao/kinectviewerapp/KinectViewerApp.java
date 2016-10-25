@@ -66,6 +66,7 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 	JCheckBox seated_skeleton;
 	JCheckBox show_infrared;
 	JButton turn_off;
+	JButton kinect_console_button;
 	JComboBox depth_resolution;
 	JComboBox video_resolution;
 	JCheckBox show_video;
@@ -73,6 +74,9 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 	JLabel accelerometer;
 	JTextArea kinect_console;
 	PrintStream con;
+	JScrollPane kinect_scroll_pane;
+	JPanel console;
+	JPanel p_root;
 	
 	public void GUIsetup(JPanel p_root) {
 		
@@ -178,15 +182,17 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 		
 		controls.add(turn_off);
 		
-		controls.add(new JButton("Show Console:"));
+		kinect_console_button = new JButton( "Show Console" );
+		kinect_console_button.addActionListener(this);
+		controls.add( kinect_console_button );
 		
-		JPanel console = new JPanel();
-		kinect_console = new JTextArea( 25, 80 );
+		console = new JPanel();
+		kinect_console = new JTextArea( 20, 80 );
 		con = new PrintStream( new KinectConsole( kinect_console ));
-    	System.setOut(con);
-    	System.setErr(con);
-		JScrollPane kinect_scroll_pane = new JScrollPane(kinect_console);
-		console.add( kinect_scroll_pane);
+		System.setOut(con);
+		System.setErr(con);
+		kinect_scroll_pane = new JScrollPane( kinect_console );
+		//console.add( kinect_scroll_pane );
 		
 		System.out.println("Kinect Ready.");
 		
@@ -200,7 +206,7 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 		p_root.add(main_panel);
 		p_root.add(controls);
 		p_root.add(console);
-		
+		p_root.revalidate();
 	}
 	
 	public void GUIclosing()
@@ -290,6 +296,21 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 		else if(e.getSource()==mask_players)
 		{
 			myKinect.maskPlayers(mask_players.isSelected());
+		}
+		else if ( e.getSource() == kinect_console_button ) 
+		{
+			if(kinect_console_button.getText().compareTo("Show Console")==0)
+			{
+				kinect_console_button.setText("Hide Console");	
+				console.add( kinect_scroll_pane );
+				//p_root.revalidate();
+			} 
+			else
+			{
+				kinect_console_button.setText("Show Console");
+				console.remove( kinect_scroll_pane );
+				
+			}
 		}
 	}
 	
