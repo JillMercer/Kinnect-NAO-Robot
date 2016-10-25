@@ -1,6 +1,7 @@
 package edu.sru.thangiah.nao.kinectviewerapp;
 
 import java.awt.Dimension;
+
 import java.awt.event.MouseEvent;
 
 import javax.media.opengl.GL2;
@@ -9,6 +10,7 @@ import edu.ufl.digitalworlds.opengl.OpenGLPanel;
 import edu.ufl.digitalworlds.j4k.DepthMap;
 import edu.ufl.digitalworlds.j4k.Skeleton;
 import edu.ufl.digitalworlds.j4k.VideoFrame;
+
 
 
 
@@ -61,6 +63,9 @@ public class ViewerPanel3D extends OpenGLPanel
 	VideoFrame videoTexture;
 	
 	Skeleton skeletons[];
+	int count = 0;
+	
+	
 	
 	public void setup()
 	{
@@ -98,7 +103,6 @@ public class ViewerPanel3D extends OpenGLPanel
 		
 		GL2 gl=getGL2();
 		
-		
 		pushMatrix();
 	    
 		translate(0,0,-2);
@@ -114,7 +118,7 @@ public class ViewerPanel3D extends OpenGLPanel
 	    	if(show_video)
 	    	{
 	    		gl.glDisable(GL2.GL_LIGHTING);
-	    		gl.glEnable(GL2.GL_TEXTURE_2D);
+	    		gl.glEnable(GL2.GL_TEXTURE_2D); 
 	    		gl.glColor3f(1f,1f,1f);
 	    		videoTexture.use(gl);
 	    		map.drawTexture(gl);
@@ -145,15 +149,20 @@ public class ViewerPanel3D extends OpenGLPanel
 	    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
 	    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
 	    			
-	    			for(int j=0; j< Skeleton.JOINT_COUNT; j++)
+	    			for(int j=0; j< Skeleton.JOINT_COUNT-5; j++)
 	    			{
-		    			String jointX = String.format( "%.2f", skeletons[ i ].get3DJointX( j ));
-		    			String jointY = String.format( "%.2f", skeletons[ i ].get3DJointY( j ));
-		    			String jointZ = String.format( "%.2f", skeletons[ i ].get3DJointZ( j ));
-		    			String content = getJointName( j ) + ": \tX: " + jointX + "  \tY: " + jointY + "  \tZ: " + jointZ;
-		    			System.out.println( content );
-	    			}				
-	    				
+	    				if ( count % 10 == 0 )// slows down the readings
+	    				{
+	     		    		String jointX = String.format( "%.2f", skeletons[ i ].get3DJointX( j ));
+			    			String jointY = String.format( "%.2f", skeletons[ i ].get3DJointY( j ));
+			    			String jointZ = String.format( "%.2f", skeletons[ i ].get3DJointZ( j ));
+			    			String content = getJointName( j ) + ": \tX: " + jointX + "  \tY: " + jointY + "  \tZ: " + jointZ;
+			    			System.out.println( content ); 
+	    				}
+	    			}			
+	    			
+	    		count++;
+	    		
 	    	}
 	    }
 		
@@ -226,24 +235,7 @@ public class ViewerPanel3D extends OpenGLPanel
 			case 19:
 				jointName = "Foot R";
 				break;
-			case 20:
-				jointName = "Spine Top";
-				break;
-			case 21:
-				jointName = "Hand Tip L";
-				break;
-			case 22:
-				jointName = "Thumb L";
-				break;
-			case 23:
-				jointName = "Hand Tip R";
-				break;
-			case 24:
-				jointName = "Thumb R";
-				break;
-			case 25:
-				jointName = "Joint Count";
-				break;
+	
 			}
 		}
 		return jointName;
