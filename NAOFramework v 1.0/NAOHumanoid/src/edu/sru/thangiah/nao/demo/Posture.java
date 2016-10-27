@@ -13,8 +13,8 @@ import edu.sru.thangiah.nao.demo.gui.ApplicationsOptionDialog;
 /**
  * Author: Zachary Kearney Last Edited, 5/5/2016
  * 
- * @author zrk1002 Posture demo. Front tactil and bottom tactil adjust which
- *         posture will be selected. Middle tactil will execute posture.
+ * @author zrk1002 Posture demo. Front tactile and bottom tactile adjust which
+ *         posture will be selected. Middle tactile will execute posture.
  *
  */
 public class Posture extends Demo {

@@ -22,6 +22,7 @@ import edu.sru.thangiah.nao.demo.KinectTracking;
 import edu.sru.thangiah.nao.demo.HelloEarth;
 import edu.sru.thangiah.nao.demo.FistBumpDemo;
 import edu.sru.thangiah.nao.demo.Posture;
+import edu.sru.thangiah.nao.demo.PostureBoard;
 import edu.sru.thangiah.nao.demo.SynchronizedDance;
 import edu.sru.thangiah.nao.demo.Track;
 
@@ -376,6 +377,14 @@ public class DemoGui extends JFrame {
 		case KinectTracking:
 			try {
 				demo = new KinectTracking(connect);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			break;
+		case PostureBoard:
+			try {
+				demo = new PostureBoard(connect);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
