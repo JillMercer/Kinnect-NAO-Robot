@@ -3,7 +3,12 @@
  */
 package edu.sru.thangiah.nao.demo;
 
+import com.aldebaran.qi.helper.proxies.ALMemory;
+import com.aldebaran.qi.helper.proxies.ALMotion;
+import com.aldebaran.qi.helper.proxies.ALRobotPosture;
 import com.aldebaran.qi.helper.proxies.ALTextToSpeech;
+import com.aldebaran.qi.helper.proxies.ALTouch;
+
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -57,6 +62,12 @@ public class KinectTracking extends Demo {
 	}
 	
 	private class KinectRobot extends DemoRobot {
+		
+		ALTextToSpeech speech;
+		ALMemory memory;
+		ALTouch touch;
+		ALMotion motion;
+		ALRobotPosture posture;
 
 		public KinectRobot(String name, String demoName, SynchronizedConnectDemo connect) throws Exception {
 			super(name, demoName, connect);
@@ -75,6 +86,15 @@ public class KinectTracking extends Demo {
 		@Override
 		public void execute() throws Exception {
 			// TODO Auto-generated method stub
+			speech.say( "Beginning mirroring." );
+			// Give power to motors:
+			motion.wakeUp();
+			// Close hands:
+			motion.closeHand("RHand");
+			motion.closeHand("LHand");
+			motion.setAngles("RShoulderPitch", 0.0f, 0.5f);
+			Thread.sleep(100);
+			motion.setAngles("RShoulderPitch", 3.14f, 0.5f);
 		}
 
 		@Override
