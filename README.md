@@ -1,8 +1,10 @@
-# NAO-Kinect
+# NAO-Kinect Project
+
+Allow for control of NAO robot via Microsoft Kinect device.
 
 ### The Kinect SDK is required. Built and Tested with Kinect SDK v1.8 and an XBox 360 Kinect. Other versions not guaranteed to work.
 
-Java 4 kinect libraries and source code citation:
+##Java 4 Kinect Citation
 
 *A. Barmpoutis. "Tensor Body: Real-time Reconstruction of the Human Body*
 *and Avatar Synthesis from RGB-D', IEEE Transactions on Cybernetics,*
@@ -51,6 +53,7 @@ The second commit added the XYZ joint coordinates for the ViewerPanel3D, there a
 
 All are located within the java4kinect skeleton class on the j4k website.
 
+##Changed Code
 Listing of files changed/added from original project:
 - Kinect Code:
   - NAOFramework v 1.0/NAOHumanoid/src/edu/sru/thangiah/nao/demo/KinectTracking.java

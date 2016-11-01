@@ -66,10 +66,9 @@ public class ViewerPanel3D extends OpenGLPanel
 	
 	VideoFrame videoTexture;
 	
-	Skeleton skeletons[];
+	public Skeleton skeletons[];
 	int count = 0;
-	Queue<Skeleton> queue = new LinkedList<Skeleton>();
-	
+	public static Queue<Skeleton> queue = new LinkedList<Skeleton>();
 	
 	public void setup()
 	{

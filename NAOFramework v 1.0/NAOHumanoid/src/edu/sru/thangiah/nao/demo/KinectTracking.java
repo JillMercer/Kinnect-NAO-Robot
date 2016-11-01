@@ -12,6 +12,8 @@ import com.aldebaran.qi.helper.proxies.ALTouch;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
+import java.util.LinkedList;
+import java.util.Queue;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -26,6 +28,7 @@ import edu.ufl.digitalworlds.gui.DWApp;
 import edu.ufl.digitalworlds.j4k.J4K1;
 import edu.ufl.digitalworlds.j4k.J4K2;
 import edu.ufl.digitalworlds.j4k.J4KSDK;
+import edu.ufl.digitalworlds.j4k.Skeleton;
 import edu.sru.thangiah.nao.connection.SynchronizedConnectDemo;
 import edu.sru.thangiah.nao.demo.fistbump.FistBump;
 import edu.sru.thangiah.nao.demo.gui.ApplicationsOptionDialog;
@@ -80,27 +83,103 @@ public class KinectTracking extends Demo {
 
 		@Override
 		protected void init() throws Exception {	
-			
+			try {
+				this.memory = new ALMemory( connect.getSession( name ));
+				this.touch = new ALTouch( connect.getSession( name ));
+				this.motion = new ALMotion( connect.getSession( name ));
+				this.posture = new ALRobotPosture( connect.getSession( name ));
+				this.speech = new ALTextToSpeech( connect.getSession( name ));
+//				Set up robot for beginning:
+				float speed = 0.3f;
+//				String jointName = "LShoulderPitch";
+				// Give power to motors and assume default position:
+				motion.wakeUp();
+				posture.goToPosture("Stand", 1.0f);
+				motion.setBreathEnabled("RArm", false);
+				motion.setIdlePostureEnabled("RArm", false);
+				motion.setBreathEnabled("LArm", false);
+				motion.setIdlePostureEnabled("LArm", false);
+				speech.say( "Beginning mirroring." );
+			} catch ( Exception e ) {
+				e.printStackTrace();
+			}
 		}
 
 		@Override
 		public void execute() throws Exception {
-			// TODO Auto-generated method stub
-			speech.say( "Beginning mirroring." );
-			// Give power to motors:
-			motion.wakeUp();
-			// Close hands:
-			motion.closeHand("RHand");
-			motion.closeHand("LHand");
-			motion.setAngles("RShoulderPitch", 0.0f, 0.5f);
-			Thread.sleep(100);
-			motion.setAngles("RShoulderPitch", 3.14f, 0.5f);
+			float speed = 0.3f;
+			String jointName = "RShoulderRoll";
+			
+			Skeleton skeletons[];
+			Skeleton currentSkel;
+			Queue<Skeleton> queue = new LinkedList<Skeleton>();
+			skeletons=new Skeleton[6];
+			int frames = 1;
+			int count = 0;
+			double angleChange;
+			
+			motion.setAngles( "RShoulderPitch", Math.toRadians( 0 ), speed );
+			for(int i=0;i<skeletons.length;i++)
+		    	if(skeletons[i]!=null) 
+		    	{
+		    		if(skeletons[i].getTimesDrawn()<=10 && skeletons[i].isTracked())
+		    			{
+		    				currentSkel = skeletons[i]; 
+//			    			skeletons[i].draw(gl);
+//			    			skeletons[i].increaseTimesDrawn();
+			    			if(count % 10 == 0 ) // slows down time drawn
+			    			{
+			    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
+			    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
+			    				//checks if the queue is less than number of frames wanted only has 2 frames at time
+			    				if (queue.size()<frames)
+			    					queue.add(skeletons[i]);
+			    				else
+			    				{
+//			    					double content
+			    					angleChange = getAngle(queue.element().get3DJointX(Skeleton.ELBOW_RIGHT),
+			    							queue.element().get3DJointY(Skeleton.ELBOW_RIGHT),
+			    							currentSkel.get3DJointX(Skeleton.ELBOW_RIGHT), 
+			    							currentSkel.get3DJointY(Skeleton.ELBOW_RIGHT));
+			    					
+//					    			System.out.println( content );
+			    					queue.remove();
+			    					queue.add(currentSkel);
+			    				}
+			    				
+			    			}
+			    		count++;
+			    			
+		    			}
+		    }
+			
+//			motion.setAngles( "LShoulderPitch", Math.toRadians( 0 ), speed );
+			Thread.sleep( 1000 );
+			
+			Thread.sleep( 1000 );
+			motion.angleInterpolation( jointName, Math.toRadians( 238 ), 5, false );
+			// When done, go back to standing:
+			posture.goToPosture("Stand", 1.0f);
+		}
+		
+//		Jill's Function: 
+		double getAngle(double x1, double y1, double x2, double y2)
+		{ // this gets the two joints and finds the angle between them
+			double radians;
+			if((x2-x1) == 0)
+			{
+				radians=0;
+			}
+			else
+				radians = Math.toRadians((Math.atan((y2-y1)/(x2-x1))));
+			return radians;
 		}
 
 		@Override
 		protected void frontTactil() {
 			try {
 			// TODO Activate Kinect Program
+				execute();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
