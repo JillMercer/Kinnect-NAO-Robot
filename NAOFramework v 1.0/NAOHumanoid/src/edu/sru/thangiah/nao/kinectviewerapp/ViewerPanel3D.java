@@ -3,6 +3,8 @@ package edu.sru.thangiah.nao.kinectviewerapp;
 import java.awt.Dimension;
 
 import java.awt.event.MouseEvent;
+import java.util.LinkedList;
+import java.util.Queue;
 
 import javax.media.opengl.GL2;
 
@@ -57,6 +59,8 @@ public class ViewerPanel3D extends OpenGLPanel
 	DepthMap map=null;
 	boolean is_playing=false;
 	boolean show_video=false;
+	int frames = 1;
+	Skeleton currentSkel;
 	
 	public void setShowVideo(boolean flag){show_video=flag;}
 	
@@ -64,7 +68,7 @@ public class ViewerPanel3D extends OpenGLPanel
 	
 	Skeleton skeletons[];
 	int count = 0;
-	
+	Queue<Skeleton> queue = new LinkedList<Skeleton>();
 	
 	
 	public void setup()
@@ -97,7 +101,17 @@ public class ViewerPanel3D extends OpenGLPanel
 			
 		    background(0, 0, 0);	
 	}	
-	
+	public double getAngle(double x1, double y1, double x2, double y2)
+	{ // this gets the two joints and finds the angle between them
+		double radians;
+		if((x2-x1) == 0)
+		{
+			radians=0;
+		}
+		else
+			radians = Math.toRadians((Math.atan((y2-y1)/(x2-x1))));
+		return radians;
+	}
 	
 	public void draw() {
 		
@@ -142,28 +156,29 @@ public class ViewerPanel3D extends OpenGLPanel
 	    	if(skeletons[i]!=null) 
 	    	{
 	    		if(skeletons[i].getTimesDrawn()<=10 && skeletons[i].isTracked())
-	    		{
-	    			skeletons[i].draw(gl);
-	    			skeletons[i].increaseTimesDrawn();
-	    			
-	    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
-	    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
-	    			
-	    			for(int j=0; j< Skeleton.JOINT_COUNT-5; j++)
 	    			{
-	    				if ( count % 10 == 0 )// slows down the readings
-	    				{
-	     		    		String jointX = String.format( "%.2f", skeletons[ i ].get3DJointX( j ));
-			    			String jointY = String.format( "%.2f", skeletons[ i ].get3DJointY( j ));
-			    			String jointZ = String.format( "%.2f", skeletons[ i ].get3DJointZ( j ));
-			    			String content = getJointName( j ) + ": \tX: " + jointX + "  \tY: " + jointY + "  \tZ: " + jointZ;
-			    			System.out.println( content ); 
-	    				}
-	    			}			
-	    			
-	    		count++;
-	    		
-	    	}
+	    				currentSkel = skeletons[i]; 
+		    			skeletons[i].draw(gl);
+		    			skeletons[i].increaseTimesDrawn();
+		    			if(count % 10 == 0 ) // slows down time drawn
+		    			{
+		    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
+		    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
+		    				//checks if the queue is less than number of frames wanted only has 2 frames at time
+		    				if (queue.size()<frames)
+		    					queue.add(skeletons[i]);
+		    				else
+		    				{
+		    					double content = getAngle(queue.element().get3DJointX(Skeleton.ELBOW_RIGHT),queue.element().get3DJointY(Skeleton.ELBOW_RIGHT),currentSkel.get3DJointX(Skeleton.ELBOW_RIGHT), currentSkel.get3DJointY(Skeleton.ELBOW_RIGHT)); 
+				    			System.out.println( content );
+		    					queue.remove();
+		    					queue.add(currentSkel);
+		    				}
+		    				
+		    			}
+		    		count++;
+		    			
+	    			}
 	    }
 		
 	    popMatrix();
