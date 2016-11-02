@@ -139,7 +139,7 @@ public class KinectTracking extends Demo {
 				    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
 				    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
 				    		//checks if the queue is less than number of frames wanted only has 2 frames at time
-		    				angleChange = getAngle( ViewerPanel3D.queue.element(), ViewerPanel3D.currentSkel, Skeleton.HAND_RIGHT );
+		    				angleChange = getRadian( ViewerPanel3D.queue.element(), ViewerPanel3D.currentSkel, Skeleton.HAND_RIGHT );
 		    				System.out.println( angleChange );
 		    				System.out.println( count );
 		    				motion.angleInterpolation( "RElbowRoll", angleChange, 1, false );
@@ -194,6 +194,17 @@ public class KinectTracking extends Demo {
 			
 		}
 	}
+	
+	double getRadian(Skeleton frame1, Skeleton frame2, int movJoint)
+	{//Second attempt at getting joint angles
+		double m1 = (frame2.get3DJointY(movJoint)-frame2.get3DJointY(Skeleton.NECK))/(frame2.get3DJointX(movJoint)-frame2.get3DJointX(Skeleton.NECK)); 
+		double m2 = (frame1.get3DJointY(movJoint)-frame2.get3DJointY(Skeleton.NECK))/(frame1.get3DJointX(movJoint)-frame2.get3DJointX(Skeleton.NECK));
+		
+		double rad = Math.toRadians(Math.atan((m1-m2)/(1+m1*m2))); 
+		
+		return rad;
+	}
+	
 	double getAngle( Skeleton skel1, Skeleton skel2, int movJoint )
 	{ // this gets the two joints and finds the angle between them
 		
