@@ -60,13 +60,13 @@ public class ViewerPanel3D extends OpenGLPanel
 	boolean is_playing=false;
 	boolean show_video=false;
 	int frames = 1;
-	Skeleton currentSkel;
+	public static Skeleton currentSkel;
 	
 	public void setShowVideo(boolean flag){show_video=flag;}
 	
 	VideoFrame videoTexture;
 	
-	public Skeleton skeletons[];
+	public static Skeleton skeletons[];
 	int count = 0;
 	public static Queue<Skeleton> queue = new LinkedList<Skeleton>();
 	
@@ -100,17 +100,6 @@ public class ViewerPanel3D extends OpenGLPanel
 			
 		    background(0, 0, 0);	
 	}	
-	public double getAngle(double x1, double y1, double x2, double y2)
-	{ // this gets the two joints and finds the angle between them
-		double radians;
-		if((x2-x1) == 0)
-		{
-			radians=0;
-		}
-		else
-			radians = Math.toRadians((Math.atan((y2-y1)/(x2-x1))));
-		return radians;
-	}
 	
 	public void draw() {
 		
@@ -122,7 +111,7 @@ public class ViewerPanel3D extends OpenGLPanel
 	    rotate(view_rotx, 1.0, 0.0, 0.0);
 	    rotate(view_roty, 0.0, 1.0, 0.0);
 	    rotate(view_rotz, 0.0, 0.0, 1.0);
-	    translate(0,0,2);        
+	    translate(0,0,2);
 	    
 	  
 	    
@@ -168,8 +157,8 @@ public class ViewerPanel3D extends OpenGLPanel
 		    					queue.add(skeletons[i]);
 		    				else
 		    				{
-		    					double content = getAngle(queue.element().get3DJointX(Skeleton.ELBOW_RIGHT),queue.element().get3DJointY(Skeleton.ELBOW_RIGHT),currentSkel.get3DJointX(Skeleton.ELBOW_RIGHT), currentSkel.get3DJointY(Skeleton.ELBOW_RIGHT)); 
-				    			System.out.println( content );
+		    					//double angleChange = getAngle( queue.element(), currentSkel, Skeleton.HAND_RIGHT ); 
+		    					//motion.angleInterpolation( "RElbowRoll", angleChange, 0, false );
 		    					queue.remove();
 		    					queue.add(currentSkel);
 		    				}
