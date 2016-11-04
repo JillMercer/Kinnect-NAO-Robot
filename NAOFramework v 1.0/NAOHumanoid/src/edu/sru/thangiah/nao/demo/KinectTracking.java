@@ -35,6 +35,7 @@ import edu.sru.thangiah.nao.demo.gui.ApplicationsOptionDialog;
 import edu.sru.thangiah.nao.kinectviewerapp.KinectViewerApp;
 import edu.sru.thangiah.nao.kinectviewerapp.KinectViewerApplet;
 import edu.sru.thangiah.nao.kinectviewerapp.ViewerPanel3D;
+import edu.sru.thangiah.nao.posture.NAOPosture;
 
 /**
  * @author Brady Rainey
@@ -69,6 +70,7 @@ public class KinectTracking extends Demo {
 		ALTouch touch;
 		ALMotion motion;
 		ALRobotPosture posture;
+		NAOPosture naoPosture;
 
 		public KinectRobot(String name, String demoName, SynchronizedConnectDemo connect) throws Exception {
 			super(name, demoName, connect);
@@ -86,23 +88,15 @@ public class KinectTracking extends Demo {
 				KinectViewerApp.createMainFrame( "Kinect Viewer Applet" );
 		    	KinectViewerApp.app = new KinectViewerApp();
 		    	KinectViewerApp.setFrameSize( 730,570,null );
+		    	
+				this.memory = new ALMemory(connect.getSession(name));
+				this.touch = new ALTouch(connect.getSession(name));
+				this.motion = new ALMotion(connect.getSession(name));
+				this.posture = new ALRobotPosture(connect.getSession(name));
+				this.speech = new ALTextToSpeech(connect.getSession(name));
+		    	
+				naoPosture = new NAOPosture( name, connect );
 				
-				this.memory = new ALMemory( connect.getSession( name ));
-				this.touch = new ALTouch( connect.getSession( name ));
-				this.motion = new ALMotion( connect.getSession( name ));
-				this.posture = new ALRobotPosture( connect.getSession( name ));
-				this.speech = new ALTextToSpeech( connect.getSession( name ));
-//				Set up robot for beginning:
-				float speed = 0.3f;
-//				String jointName = "LShoulderPitch";
-				// Give power to motors and assume default position:
-				motion.wakeUp();
-				posture.goToPosture("Stand", 1.0f);
-				motion.setBreathEnabled("RArm", false);
-				motion.setIdlePostureEnabled("RArm", false);
-				motion.setBreathEnabled("LArm", false);
-				motion.setIdlePostureEnabled("LArm", false);
-				speech.say( "Beginning mirroring." );
 			} catch ( Exception e ) {
 				e.printStackTrace();
 			}
@@ -111,50 +105,50 @@ public class KinectTracking extends Demo {
 		@Override
 		public void execute() throws Exception {
 			
-//			speech.setVoice(  );
-			speech.say( "Inside execute." );
+			//speech.say( "Beginning mirroring." );
 			float speed = 0.3f;
-			String jointName = "RShoulderRoll";
-			
 			int frames = 1;
 			int count = 0;
 			double angleChange;
 			
-			motion.setAngles( "RShoulderPitch", Math.toRadians( 0 ), speed );
-			motion.setAngles( "RShoulderRoll", Math.toRadians( -76 ), speed );
-			//---
-			while ( count < 500 ) {
-			    for(int i = 0; i < ViewerPanel3D.skeletons.length; i++ )
-			    	if( ViewerPanel3D.skeletons[i] != null ) 
-			    	{
-			    		if( ViewerPanel3D.skeletons[i].getTimesDrawn() <= 10 && ViewerPanel3D.skeletons[i].isTracked())
-			    		{
-			    			ViewerPanel3D.currentSkel = ViewerPanel3D.skeletons[i]; 
-				    		//skeletons[i].draw(gl);
-			    			ViewerPanel3D.skeletons[i].increaseTimesDrawn();
-			    			if ( ViewerPanel3D.queue.size() < frames )
-			    				ViewerPanel3D.queue.add( ViewerPanel3D.skeletons[i] );
-				    		if(count % 10 == 0 ) // slows down time drawn
-				    		{
-				    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
-				    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
-				    		//checks if the queue is less than number of frames wanted only has 2 frames at time
-		    				angleChange = getRadian( ViewerPanel3D.queue.element(), ViewerPanel3D.currentSkel, Skeleton.HAND_RIGHT );
-		    				System.out.println( angleChange );
-		    				System.out.println( count );
-		    				motion.angleInterpolation( "RElbowRoll", angleChange, 1, false );
-		    				ViewerPanel3D.queue.remove();
-		    				ViewerPanel3D.queue.add( ViewerPanel3D.currentSkel );
-				    		}
-				    		count++;
-				    	}
-				    	//count++;
-			    	}
-			}
-			//---
+//			naoPosture.leftArmOut();
+//			naoPosture.rightArmOut();
+//			Thread.sleep( 1000 );
+//			
+//			naoPosture.leftArmUp();
+//			naoPosture.rightArmUp();
+//			Thread.sleep( 1000 );
+//			
+//			naoPosture.leftArmDown();
+//			naoPosture.rightArmDown();
+//			Thread.sleep( 1000 );
+//			
+//			naoPosture.leftArmUp();
+//			naoPosture.rightArmDown();
+//			Thread.sleep( 1000 );
+//			
+//			naoPosture.leftArmDown();
+//			naoPosture.rightArmUp();
+//			Thread.sleep( 1000 );
 			
 			Thread.sleep( 1000 );
 			// When done, go back to standing:
+			posture.goToPosture("Stand", 1.0f);
+			speech.say( "Beginning mirrioring for real." );
+			
+			for ( int i = 0; i < 500; i++ ) {
+				double leftShoulderPitch = Math.atan((ViewerPanel3D.currentSkel.get3DJointY(Skeleton.ELBOW_LEFT) - 
+						ViewerPanel3D.currentSkel.get3DJointY(Skeleton.SHOULDER_LEFT)) / 
+						(ViewerPanel3D.currentSkel.get3DJointX(Skeleton.ELBOW_LEFT) - 
+						ViewerPanel3D.currentSkel.get3DJointX(Skeleton.SHOULDER_LEFT)));
+				motion.setAngles( "LShoulderPitch", leftShoulderPitch, speed );
+				double rightShoulderPitch = Math.atan((ViewerPanel3D.currentSkel.get3DJointY(Skeleton.ELBOW_RIGHT) - 
+						ViewerPanel3D.currentSkel.get3DJointY(Skeleton.SHOULDER_RIGHT)) / 
+						(ViewerPanel3D.currentSkel.get3DJointX(Skeleton.ELBOW_RIGHT) - 
+						ViewerPanel3D.currentSkel.get3DJointX(Skeleton.SHOULDER_RIGHT)));
+					motion.setAngles( "RShoulderPitch", -rightShoulderPitch, speed );
+			}
+			speech.say( "Done!" );
 			posture.goToPosture("Stand", 1.0f);
 		}
 
@@ -198,9 +192,9 @@ public class KinectTracking extends Demo {
 	double getRadian(Skeleton frame1, Skeleton frame2, int movJoint)
 	{//Second attempt at getting joint angles
 		double m1 = (frame2.get3DJointY(movJoint)-frame2.get3DJointY(Skeleton.NECK))/(frame2.get3DJointX(movJoint)-frame2.get3DJointX(Skeleton.NECK)); 
-		double m2 = (frame1.get3DJointY(movJoint)-frame2.get3DJointY(Skeleton.NECK))/(frame1.get3DJointX(movJoint)-frame2.get3DJointX(Skeleton.NECK));
+		double m2 = (frame1.get3DJointY(movJoint)-frame1.get3DJointY(Skeleton.NECK))/(frame1.get3DJointX(movJoint)-frame1.get3DJointX(Skeleton.NECK));
 		
-		double rad = Math.toRadians(Math.atan((m1-m2)/(1+m1*m2))); 
+		double rad = Math.toRadians(Math.atan((m2-m1)/(1+m1*m2))); 
 		
 		return rad;
 	}
