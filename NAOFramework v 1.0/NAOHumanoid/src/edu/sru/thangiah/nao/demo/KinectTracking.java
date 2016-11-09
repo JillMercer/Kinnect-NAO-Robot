@@ -83,7 +83,7 @@ public class KinectTracking extends Demo {
 			motion.setIdlePostureEnabled("LArm", false);
 			speech.say( "I'm ready." );
 			posture.goToPosture( "Stand", 1.0f );
-			for ( int i = 0; i < 500; i++ ) {
+			for ( int i = 0; i < 400; i++ ) {
 				double leftShoulderPitch = Math.atan(( ViewerPanel3D.currentSkel.get3DJointY( Skeleton.ELBOW_LEFT ) - 
 						ViewerPanel3D.currentSkel.get3DJointY( Skeleton.SHOULDER_LEFT )) / 
 						( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_LEFT ) - 
@@ -95,6 +95,33 @@ public class KinectTracking extends Demo {
 						( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_RIGHT ) - 
 						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.SHOULDER_RIGHT )));
 				motion.setAngles( "RShoulderPitch", -rightShoulderPitch, speed );
+				
+//				double leftElbowRoll = Math.atan(( ViewerPanel3D.currentSkel.get3DJointY( Skeleton.ELBOW_LEFT ) - 
+//						ViewerPanel3D.currentSkel.get3DJointY( Skeleton.WRIST_LEFT )) / 
+//						( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_LEFT ) - 
+//						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.WRIST_LEFT )));
+//				motion.setAngles( "LElbowRoll", leftElbowRoll, speed );
+//				
+//				double rightElbowRoll = Math.atan(( ViewerPanel3D.currentSkel.get3DJointY( Skeleton.ELBOW_RIGHT ) - 
+//						ViewerPanel3D.currentSkel.get3DJointY( Skeleton.WRIST_RIGHT )) / 
+//						( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_RIGHT ) - 
+//						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.WRIST_RIGHT )));
+//				motion.setAngles( "RElbowRoll", rightElbowRoll, speed );
+				
+//				double leftShoulderRoll = Math.atan( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.SHOULDER_LEFT ) - 
+//						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_LEFT ) /
+//						( ViewerPanel3D.currentSkel.get3DJointZ( Skeleton.SHOULDER_LEFT ) - 
+//								ViewerPanel3D.currentSkel.get3DJointZ( Skeleton.ELBOW_LEFT )));
+//				motion.setAngles( "LShoulderRoll", -leftShoulderRoll, speed );
+//				
+//				double rightShoulderRoll = Math.atan( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_RIGHT ) -
+//						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.SHOULDER_RIGHT ) /
+//						( ViewerPanel3D.currentSkel.get3DJointZ( Skeleton.ELBOW_RIGHT ) - 
+//						ViewerPanel3D.currentSkel.get3DJointZ( Skeleton.SHOULDER_RIGHT )));
+//				motion.setAngles( "RShoulderRoll", rightShoulderRoll, speed );
+				
+//				System.out.println( "Left Elbow: " + Math.toDegrees( leftElbowRoll ));
+//				System.out.println( "Right Elbow: " + Math.toDegrees( rightElbowRoll ));
 				
 				// double right
 				// double left
