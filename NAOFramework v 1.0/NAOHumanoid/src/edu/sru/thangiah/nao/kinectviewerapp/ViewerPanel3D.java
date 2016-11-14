@@ -100,36 +100,36 @@ public class ViewerPanel3D extends OpenGLPanel
 			
 		    background(0, 0, 0);	
 	}	
-	public double getVectorAngle(Skeleton current, int joint1, int joint2, int joint3)
-	{	//may not need all three points, maybe only 2?
-		double angle;
-		 
-		double x1 = current.get3DJointX(joint1);
-		double y1 = current.get3DJointY(joint1);
-		double z1 = current.get3DJointZ(joint1);
-		double x2 = current.get3DJointX(joint2);
-		double y2 = current.get3DJointY(joint2);
-		double z2 = current.get3DJointZ(joint2);
-		double x3 = current.get3DJointX(joint3);
-		double y3 = current.get3DJointY(joint3);
-		double z3 = current.get3DJointZ(joint3);
-		
-		//calculate the lengths of the vectors
-		double mag1 = Math.sqrt((x1*x1)+(y1*y1)+(z1*z1));
-		double mag2 = Math.sqrt((x2*x2)+(y2*y2)+(z2*z2));
-		double mag3 = Math.sqrt((x3*x3)+(y3*y3)+(z3*z3));
-		
-		//find the dot product
-		double dotProd = (x1*x2*x3)+(y1*y2*y3)+(z1*z2*z3);
-		
-		//plug into acos formula
-		double test = dotProd/(mag1*mag2*mag3);
-		angle = Math.acos(dotProd/(mag1*mag2*mag3));
-		
-		System.out.println("Math before acos" + test + "\n");
-		
-		return angle;
-	}
+//	public double getVectorAngle(Skeleton current, int joint1, int joint2, int joint3)
+//	{	//may not need all three points, maybe only 2?
+//		double angle;
+//		 
+//		double x1 = current.get3DJointX(joint1);
+//		double y1 = current.get3DJointY(joint1);
+//		double z1 = current.get3DJointZ(joint1);
+//		double x2 = current.get3DJointX(joint2);
+//		double y2 = current.get3DJointY(joint2);
+//		double z2 = current.get3DJointZ(joint2);
+//		double x3 = current.get3DJointX(joint3);
+//		double y3 = current.get3DJointY(joint3);
+//		double z3 = current.get3DJointZ(joint3);
+//		
+//		//calculate the lengths of the vectors
+//		double mag1 = Math.sqrt((x1*x1)+(y1*y1)+(z1*z1));
+//		double mag2 = Math.sqrt((x2*x2)+(y2*y2)+(z2*z2));
+//		double mag3 = Math.sqrt((x3*x3)+(y3*y3)+(z3*z3));
+//		
+//		//find the dot product
+//		double dotProd = (x1*x2*x3)+(y1*y2*y3)+(z1*z2*z3);
+//		
+//		//plug into acos formula
+//		double test = dotProd/(mag1*mag2*mag3);
+//		angle = Math.acos(dotProd/(mag1*mag2*mag3));
+//		
+//		System.out.println("Math before acos" + test + "\n");
+//		
+//		return angle;
+//	}
 	public void draw() {
 		
 		GL2 gl=getGL2();
@@ -177,15 +177,15 @@ public class ViewerPanel3D extends OpenGLPanel
 	    				currentSkel = skeletons[i]; 
 		    			skeletons[i].draw(gl);
 		    			skeletons[i].increaseTimesDrawn();
-		    			if(count % 10 == 0 ) // slows down time drawn
-		    			{
-		    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
-		    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
-		    				//checks if the queue is less than number of frames wanted only has 2 frames at time
-		    				System.out.println(Math.toDegrees(getVectorAngle(currentSkel,5,4,12)));
-		    				
-		    			}
-		    		count++;
+//		    			if(count % 10 == 0 ) // slows down time drawn
+//		    			{
+//		    		//Accesses the individual joints and gets the XYZ coordinates and writes them to a file for the time being
+//		    		//There are 25 different joints in the skeleton class to access this is listed on j4k.com (skeleton class)
+//		    				//checks if the queue is less than number of frames wanted only has 2 frames at time
+////		    				System.out.println(Math.toDegrees(getVectorAngle(currentSkel,5,4,12)));
+//		    				
+//		    			}
+//		    		count++;
 		    			
 	    			}
 	    }

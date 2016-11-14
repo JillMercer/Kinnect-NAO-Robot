@@ -44,6 +44,7 @@ public class KinectTracking extends Demo {
 		ALTextToSpeech speech;
 		ALMotion motion;
 		ALRobotPosture posture;
+		Skeleton lastSkeleton;
 
 		public KinectRobot( String name, String demoName, SynchronizedConnectDemo connect ) throws Exception {
 			super( name, demoName, connect );
@@ -75,7 +76,7 @@ public class KinectTracking extends Demo {
 		@Override
 		public void execute() throws Exception {
 			
-			float speed = 0.5f;
+			float speed = 0.2f;
 			motion.wakeUp();
 			motion.setBreathEnabled("RArm", false);
 			motion.setIdlePostureEnabled("RArm", false);
@@ -83,7 +84,14 @@ public class KinectTracking extends Demo {
 			motion.setIdlePostureEnabled("LArm", false);
 			speech.say( "I'm ready." );
 			posture.goToPosture( "Stand", 1.0f );
+			lastSkeleton = ViewerPanel3D.currentSkel; 
 			for ( int i = 0; i < 400; i++ ) {
+				
+				// Fake Movements Begin
+				motion.setAngles( "LShoulderRoll", 0, speed );
+				motion.setAngles( "RShoulderRoll", 0, speed );
+				// Fake Movements End
+				
 				double leftShoulderPitch = Math.atan(( ViewerPanel3D.currentSkel.get3DJointY( Skeleton.ELBOW_LEFT ) - 
 						ViewerPanel3D.currentSkel.get3DJointY( Skeleton.SHOULDER_LEFT )) / 
 						( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_LEFT ) - 
@@ -96,35 +104,20 @@ public class KinectTracking extends Demo {
 						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.SHOULDER_RIGHT )));
 				motion.setAngles( "RShoulderPitch", -rightShoulderPitch, speed );
 				
-//				double leftElbowRoll = Math.atan(( ViewerPanel3D.currentSkel.get3DJointY( Skeleton.ELBOW_LEFT ) - 
-//						ViewerPanel3D.currentSkel.get3DJointY( Skeleton.WRIST_LEFT )) / 
-//						( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_LEFT ) - 
-//						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.WRIST_LEFT )));
-//				motion.setAngles( "LElbowRoll", leftElbowRoll, speed );
-//				
-//				double rightElbowRoll = Math.atan(( ViewerPanel3D.currentSkel.get3DJointY( Skeleton.ELBOW_RIGHT ) - 
-//						ViewerPanel3D.currentSkel.get3DJointY( Skeleton.WRIST_RIGHT )) / 
-//						( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_RIGHT ) - 
-//						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.WRIST_RIGHT )));
-//				motion.setAngles( "RElbowRoll", rightElbowRoll, speed );
+// WORKING CODE ABOVE THIS LINE
+// TEST CODE BELOW THIS LINE
 				
-//				double leftShoulderRoll = Math.atan( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.SHOULDER_LEFT ) - 
-//						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_LEFT ) /
-//						( ViewerPanel3D.currentSkel.get3DJointZ( Skeleton.SHOULDER_LEFT ) - 
-//								ViewerPanel3D.currentSkel.get3DJointZ( Skeleton.ELBOW_LEFT )));
-//				motion.setAngles( "LShoulderRoll", -leftShoulderRoll, speed );
-//				
-//				double rightShoulderRoll = Math.atan( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_RIGHT ) -
-//						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.SHOULDER_RIGHT ) /
-//						( ViewerPanel3D.currentSkel.get3DJointZ( Skeleton.ELBOW_RIGHT ) - 
-//						ViewerPanel3D.currentSkel.get3DJointZ( Skeleton.SHOULDER_RIGHT )));
-//				motion.setAngles( "RShoulderRoll", rightShoulderRoll, speed );
+				double leftElbowRoll = getVectorAngle( ViewerPanel3D.currentSkel, Skeleton.SHOULDER_LEFT, Skeleton.ELBOW_LEFT, Skeleton.WRIST_LEFT );
 				
-//				System.out.println( "Left Elbow: " + Math.toDegrees( leftElbowRoll ));
-//				System.out.println( "Right Elbow: " + Math.toDegrees( rightElbowRoll ));
+				double rightElbowRoll = getVectorAngle( ViewerPanel3D.currentSkel, Skeleton.SHOULDER_RIGHT, Skeleton.ELBOW_RIGHT, Skeleton.WRIST_RIGHT );
 				
-				// double right
-				// double left
+//				motion.setAngles( "LElbowRoll", Math.toRadians(-88), speed );
+				motion.setAngles( "LElbowRoll", leftElbowRoll - Math.toRadians( 180 ), speed );
+//				motion.setAngles( "RElbowRoll", Math.toRadians(88), speed );
+				motion.setAngles( "RElbowRoll", -( rightElbowRoll - Math.toRadians( 180 )), speed );
+				
+				lastSkeleton = ViewerPanel3D.currentSkel; 
+				System.out.println( "Value to robot (left): " + Math.toDegrees( leftElbowRoll ));
 			}
 			
 			speech.say( "Done!" );
@@ -134,7 +127,7 @@ public class KinectTracking extends Demo {
 		@Override
 		protected void frontTactil() {
 			try {
-			// TODO Activate Kinect Program
+			// Activate Kinect Program
 				execute();
 			} catch ( Exception e ) {
 				// TODO Auto-generated catch block
@@ -162,5 +155,42 @@ public class KinectTracking extends Demo {
 		@Override
 		protected void handRightLeft() {
 		}
+	}
+	public double getVectorAngle(Skeleton current, int joint1, int joint2, int joint3)
+	{	//may not need all three points, maybe only 2?
+		double angle;
+		 
+		double aX = current.get3DJointX(joint1);
+		double aY = current.get3DJointY(joint1);
+		double aZ = current.get3DJointZ(joint1);
+		double bX = current.get3DJointX(joint2);
+		double bY = current.get3DJointY(joint2);
+		double bZ = current.get3DJointZ(joint2);
+		double cX = current.get3DJointX(joint3);
+		double cY = current.get3DJointY(joint3);
+		double cZ = current.get3DJointZ(joint3);
+		
+		double baX = aX - bX;
+		double baY = aY - bY;
+		double baZ = aZ - bZ;
+		
+		double bcX = cX - bX;
+		double bcY = cY - bY;
+		double bcZ = cZ - bZ;
+		
+		//calculate the lengths of the vectors
+		double mag1 = Math.sqrt(( baX * baX ) + ( baY * baY ) + ( baZ * baZ ));
+		double mag2 = Math.sqrt(( bcX * bcX ) + ( bcY * bcY ) + ( bcZ * bcZ ));
+		
+		//find the dot product
+		double dotProd = ( baX * bcX ) + ( baY * bcY ) + ( baZ * bcZ );
+		
+		//plug into acos formula
+//		double test = dotProd/(mag1*mag2*mag3);
+		angle = Math.acos( dotProd / ( mag1 * mag2 ));
+		
+//		System.out.println( "Function angle: " + angle );
+		
+		return angle;
 	}
 }
