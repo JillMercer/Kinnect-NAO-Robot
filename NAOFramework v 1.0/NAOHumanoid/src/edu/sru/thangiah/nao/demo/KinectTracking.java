@@ -44,8 +44,12 @@ public class KinectTracking extends Demo {
 		ALTextToSpeech speech;
 		ALMotion motion;
 		ALRobotPosture posture;
-		Skeleton lastSkeleton;
-
+		
+		// Depending on the arm, these may be positive or negative. Negate as needed. 
+		final int MAXSHOULDERROLLANGLE = 76;
+		final int MAXSHOULDERPITCHANGLE = 119; // Negative and positive on both arms. 
+		final int MAXELBOWANGLE = 88;
+		
 		public KinectRobot( String name, String demoName, SynchronizedConnectDemo connect ) throws Exception {
 			super( name, demoName, connect );
 			// TODO Auto-generated constructor stub
@@ -54,19 +58,18 @@ public class KinectTracking extends Demo {
 		@Override
 		protected void safeClose() throws Exception {
 		}
-
+		
 		@Override
 		protected void init() throws Exception {	
 			try {
 				
 				KinectViewerApp.createMainFrame( "Kinect Viewer Applet" );
-		    	KinectViewerApp.app = new KinectViewerApp();
-		    	KinectViewerApp.setFrameSize( 730, 570, null );
-		    	
+				KinectViewerApp.app = new KinectViewerApp();
+				KinectViewerApp.setFrameSize( 730, 570, null );
+				
 				this.posture = new ALRobotPosture( connect.getSession( name ));
 				this.speech = new ALTextToSpeech( connect.getSession( name ));
 				this.motion = new ALMotion( connect.getSession( name ));
-
 				
 			} catch ( Exception e ) {
 				e.printStackTrace();
@@ -82,15 +85,13 @@ public class KinectTracking extends Demo {
 			motion.setIdlePostureEnabled("RArm", false);
 			motion.setBreathEnabled("LArm", false);
 			motion.setIdlePostureEnabled("LArm", false);
+			motion.setBreathEnabled("LLeg", false);
+			motion.setIdlePostureEnabled("LLeg", false);
+			motion.setBreathEnabled("RLeg", false);
+			motion.setIdlePostureEnabled("RLeg", false);
 			speech.say( "I'm ready." );
-			posture.goToPosture( "Stand", 1.0f );
-			lastSkeleton = ViewerPanel3D.currentSkel; 
+			posture.goToPosture( "Stand", 1.0f ); 
 			for ( int i = 0; i < 400; i++ ) {
-				
-				// Fake Movements Begin
-				motion.setAngles( "LShoulderRoll", 0, speed );
-				motion.setAngles( "RShoulderRoll", 0, speed );
-				// Fake Movements End
 				
 				double leftShoulderPitch = Math.atan(( ViewerPanel3D.currentSkel.get3DJointY( Skeleton.ELBOW_LEFT ) - 
 						ViewerPanel3D.currentSkel.get3DJointY( Skeleton.SHOULDER_LEFT )) / 
@@ -104,20 +105,38 @@ public class KinectTracking extends Demo {
 						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.SHOULDER_RIGHT )));
 				motion.setAngles( "RShoulderPitch", -rightShoulderPitch, speed );
 				
+				double leftElbowRoll = getVectorAngle( ViewerPanel3D.currentSkel, Skeleton.SHOULDER_LEFT, Skeleton.ELBOW_LEFT, Skeleton.WRIST_LEFT );
+				double rightElbowRoll = getVectorAngle( ViewerPanel3D.currentSkel, Skeleton.SHOULDER_RIGHT, Skeleton.ELBOW_RIGHT, Skeleton.WRIST_RIGHT );
+				motion.setAngles( "LElbowRoll", leftElbowRoll - Math.toRadians( 180 ), speed );
+				motion.setAngles( "RElbowRoll", -( rightElbowRoll - Math.toRadians( 180 )), speed );
+				
 // WORKING CODE ABOVE THIS LINE
 // TEST CODE BELOW THIS LINE
 				
-				double leftElbowRoll = getVectorAngle( ViewerPanel3D.currentSkel, Skeleton.SHOULDER_LEFT, Skeleton.ELBOW_LEFT, Skeleton.WRIST_LEFT );
+				double leftShoulderRoll = getVectorAngle( ViewerPanel3D.currentSkel, Skeleton.ELBOW_LEFT, Skeleton.SHOULDER_LEFT, Skeleton.SPINE_SHOULDER );
+				double rightShoulderRoll = getVectorAngle( ViewerPanel3D.currentSkel, Skeleton.ELBOW_RIGHT, Skeleton.SHOULDER_RIGHT, Skeleton.SPINE_SHOULDER );
 				
-				double rightElbowRoll = getVectorAngle( ViewerPanel3D.currentSkel, Skeleton.SHOULDER_RIGHT, Skeleton.ELBOW_RIGHT, Skeleton.WRIST_RIGHT );
+				motion.setAngles( "LShoulderRoll", leftShoulderRoll - Math.toRadians( 70 ), speed );
+				motion.setAngles( "RShoulderRoll", -( rightShoulderRoll - Math.toRadians( 70 )), speed ); //48
 				
-//				motion.setAngles( "LElbowRoll", Math.toRadians(-88), speed );
-				motion.setAngles( "LElbowRoll", leftElbowRoll - Math.toRadians( 180 ), speed );
-//				motion.setAngles( "RElbowRoll", Math.toRadians(88), speed );
-				motion.setAngles( "RElbowRoll", -( rightElbowRoll - Math.toRadians( 180 )), speed );
+//				if ( Math.toDegrees( leftShoulderRoll ) > this.MAXSHOULDERROLLANGLE ) {
+//					// Do Nothing
+////					motion.setAngles( "LShoulderPitch", leftShoulderRoll - Math.toRadians( 20 ), speed );
+//				} else {
+//					motion.setAngles( "LShoulderRoll", leftShoulderRoll - Math.toRadians( 0 ), speed );
+////					motion.setAngles( "LShoulderPitch", leftShoulderRoll - Math.toRadians( 20 ), speed );
+//				}
+//				
+//				if ( Math.toDegrees( rightShoulderRoll ) > this.MAXSHOULDERROLLANGLE ) {
+//					// Do Nothing
+////					motion.setAngles( "RShoulderPitch", rightShoulderRoll - Math.toRadians( 20 ), speed );
+//				} else {
+//					motion.setAngles( "RShoulderRoll", -( rightShoulderRoll - Math.toRadians( 0 )), speed ); //48
+////					motion.setAngles( "RShoulderPitch", rightShoulderRoll - Math.toRadians( 20 ), speed );
+//				}
 				
-				lastSkeleton = ViewerPanel3D.currentSkel; 
-				System.out.println( "Value to robot (left): " + Math.toDegrees( leftElbowRoll ));
+				System.out.println( "Left Armpit: " + Math.toDegrees( leftShoulderRoll ));
+				System.out.println( "Left Elbow: " + Math.toDegrees( leftElbowRoll ));
 			}
 			
 			speech.say( "Done!" );
