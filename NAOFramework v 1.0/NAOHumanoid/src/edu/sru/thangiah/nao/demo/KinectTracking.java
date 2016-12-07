@@ -102,7 +102,7 @@ public class KinectTracking extends Demo {
 						ViewerPanel3D.currentSkel.get3DJointX( Skeleton.SHOULDER_LEFT )));
 				motion.setAngles( "LShoulderPitch", leftShoulderPitch, speed );
 				
-				// Right Should Pitch 
+				// Right Shoulder Pitch 
 				double rightShoulderPitch = Math.atan(( ViewerPanel3D.currentSkel.get3DJointY( Skeleton.ELBOW_RIGHT ) - 
 						ViewerPanel3D.currentSkel.get3DJointY( Skeleton.SHOULDER_RIGHT )) / 
 						( ViewerPanel3D.currentSkel.get3DJointX( Skeleton.ELBOW_RIGHT ) - 
